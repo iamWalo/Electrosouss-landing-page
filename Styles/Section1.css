@@ -1,0 +1,59 @@
+body {
+    background: #F9F9F9;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+:root {
+    --black-clr: #000;
+}
+
+.Seciton1 {
+    padding: 0 125px;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    width: 350px;
+    height: 545px;
+    margin-right: 120px;
+    flex-direction: column;
+    align-items: center;
+    gap: -1px;
+    flex-shrink: 0;
+    border-right: 0.5px solid #ccc;
+}
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar ul li {
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+
+.sidebar ul li i {
+    color: var(--black-clr);
+    font-size: 10px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content img {
+    width: 790px;
+}
