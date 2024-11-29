@@ -17,7 +17,8 @@
 .Section2-title {
     width: 100%;
     text-align: left;
-    margin-left: 200px;
+    position: relative;
+    left: 7%;
     margin-bottom: 80px;
     color: var(--black-clr);
     font-family: "Poppins", sans-serif;

@@ -1,0 +1,17 @@
+.categorys {
+    gap: 20px;
+    padding: 0px 270px;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    width: 150px;
+    height: 110px;
+}
+
+.category img {
+    width: 110px;
+}

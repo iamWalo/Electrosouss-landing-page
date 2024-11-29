@@ -1,0 +1,29 @@
+.Section6 .category img {
+    width: 50px;
+}
+
+.Section6 .categorys {
+
+    padding: 0px 240px;
+}
+
+.Section6 .category {
+    display: flex;
+    width: 200px;
+    height: 128px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border: none;
+}
+
+.Section6 .category p {
+    color: #333;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
