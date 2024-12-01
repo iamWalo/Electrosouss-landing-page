@@ -1,9 +1,9 @@
-.categorys {
+.Section5 .categorys {
     gap: 20px;
     padding: 0px 270px;
 }
 
-.category {
+.Section5 .category {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,6 +12,6 @@
     height: 110px;
 }
 
-.category img {
+.Section5 .category img {
     width: 110px;
 }

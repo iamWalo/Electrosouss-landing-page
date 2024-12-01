@@ -9,12 +9,20 @@ body {
     background-color: #f8f8f8;
 }
 
+:root {
+    --black-clr: #000;
+    --white-clr: #fff;
+    --clr-1: #888;
+    --clr-2: #ED1C24;
+    --clr-3: #007BFF;
+}
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 160px;
-    background-color: #fff;
+    background-color: var(--white-clr);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -43,7 +51,7 @@ header {
     margin: 0 20px;
     position: relative;
     border-radius: 8px;
-    background: #FFF;
+    background: var(--white-clr);
     box-shadow: 1px 2px 12px 0px rgba(0, 0, 0, 0.20);
 }
 
@@ -87,4 +95,10 @@ header {
 
 .dropdown span {
     font-size: 12px;
+}
+
+.fa-solid {
+    cursor: pointer;
+    color: var(--clr-2);
+    transition: all .9s;
 }

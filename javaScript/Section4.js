@@ -133,6 +133,7 @@ const products = [
 // الحصول على عنصر الحاوية
 const container = document.getElementById("products-container");
 
+
 // إنشاء المنتجات وإضافتها إلى DOM
 products.forEach(product => {
     const productCard = document.createElement("div");
@@ -164,3 +165,14 @@ products.forEach(product => {
 
     container.appendChild(productCard);
 });
+
+const likeButtons = document.querySelectorAll('.heart')
+
+likeButtons.forEach((likeButton) => {
+    const heartIcon = likeButton.querySelector('i')
+    heartIcon.addEventListener('click', (e) => {
+
+        heartIcon.classList.toggle('fa-solid');
+        heartIcon.classList.toggle('fa-rergular');
+    })
+})

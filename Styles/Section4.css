@@ -13,3 +13,7 @@
     gap: 40px;
     grid-row-gap: 50px;
 }
+
+.fa-heart::before {
+    cursor: pointer;
+}
