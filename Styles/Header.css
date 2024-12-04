@@ -72,6 +72,7 @@ header {
 }
 
 .search-bar {
+    display: flex;
     flex: 1;
     max-width: 500px;
     margin: 0 20px;
@@ -137,6 +138,10 @@ header {
     display: none;
 }
 
+.display-none {
+    display: flex;
+}
+
 @media (max-width: 966px) {
     .display-none {
         display: none;
@@ -146,6 +151,10 @@ header {
         justify-content: space-between;
         padding: 20px 50px;
         display: grid;
+    }
+
+    .header-right .search-bar {
+        display: none;
     }
 
     .header-right {
