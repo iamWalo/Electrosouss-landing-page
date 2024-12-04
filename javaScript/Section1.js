@@ -1,29 +1,48 @@
-const slider = document.querySelector('.slider');
-const dots = document.querySelectorAll('.dot');
 
-let currentIndex = 0;
 
-function updateSlider() {
-    // تغيير خاصية transform لتحريك الصور
-    slider.style.transform = `translateX(-${currentIndex * 100} %)`;
-    dots.forEach((dot, index) => {
-        dot.classList.toggle('active', index === currentIndex);
-    });
+const liLink = document.querySelector('.sidebar')
+const sideBar = document.querySelector('.sidebar');
+liLink.addEventListener('click', () => {
+    const showDiv = document.createElement('div');
+    showDiv.className = 'show-div'
+    showDiv.innerHTML = `
+         <ul>
+                    <li>
+                        <i class="fa-solid fa-blender"></i><span>Lorem ipsum dolor sit.</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-truck-fast"></i><span>Lorem ipsum dolor sit.</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-shower"></i><span>Lorem ipsum dolor sit.</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-cart-shopping"></i><span>Lorem ipsum dolor sit.</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bed"></i><span>Lorem ipsum dolor sit.</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-tty"></i><span>Lorem ipsum dolor sit.</span>
+                    </li>
+                </ul>
+        `;
+
+    if (sideBar.children[1]) {
+        sideBar.removeChild(sideBar.children[1]);
+    } else {
+        sideBar.appendChild(showDiv);
+    }
+
+})
+
+console.log('hello world');
+
+
+const showSidebar = () => {
+    if (sideBar.style.display === 'block') {
+        sideBar.style.display = 'none';
+    } else {
+        sideBar.style.display = 'block'
+    }
 }
-
-// إضافة حدث النقر للنقاط
-dots.forEach(dot => {
-    dot.addEventListener('click', () => {
-        currentIndex = parseInt(dot.dataset.index, 10);
-        updateSlider();
-    });
-});
-
-// تمرير الصور تلقائيًا (اختياري)
-setInterval(() => {
-    currentIndex = (currentIndex + 1) % dots.length;
-    updateSlider();
-}, 2000);
-
-// تشغيل التمرير الأولي
-updateSlider();

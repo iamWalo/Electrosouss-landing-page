@@ -9,6 +9,31 @@ body {
     background-color: #f8f8f8;
 }
 
+img:hover {
+    pointer-events: none;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #cfcaca;
+    /* خلفية بيضاء */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    /* فوق جميع العناصر */
+}
+
+#loader span {
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
+}
+
 :root {
     --black-clr: #000;
     --white-clr: #fff;
@@ -24,6 +49,7 @@ header {
     padding: 20px 160px;
     background-color: var(--white-clr);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 122;
 }
 
 .logo {
@@ -101,4 +127,78 @@ header {
     cursor: pointer;
     color: var(--clr-2);
     transition: all .9s;
+}
+
+.resposive-search-bar {
+    display: none;
+}
+
+.bottom-div {
+    display: none;
+}
+
+@media (max-width: 966px) {
+    .display-none {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 20px 50px;
+        display: grid;
+    }
+
+    .header-right {
+        width: auto;
+        grid-column: 6/7;
+    }
+
+    .logo {
+        grid-column: 1/2;
+    }
+
+    .bottom-div {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column: 1/7;
+        margin-top: 15px;
+    }
+
+    .resposive-search-bar input {
+        height: 100%;
+        width: 100%;
+    }
+
+    .resposive-search-bar {
+        display: block;
+    }
+
+    .res-categorys-button {
+        /* grid-column: 1/2; */
+        height: 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .bottom-div button {
+        background-color: transparent;
+        border: none;
+        color: #333;
+        font-family: "Roboto";
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        background: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .bottom-div button i {
+        margin-right: 5px;
+        font-size: 18px;
+    }
 }
