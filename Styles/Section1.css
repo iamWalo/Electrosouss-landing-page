@@ -4,6 +4,12 @@ body {
     box-sizing: border-box;
 }
 
+div#content {
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
 :root {
     --black-clr: #000;
 }

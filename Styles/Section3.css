@@ -55,7 +55,21 @@
     transition: .9s;
 }
 
-.category:hover {
+.Section3 .category:hover {
     transition: .9s;
     background-color: black;
+}
+
+@media (max-width: 960px) {
+
+    .Section3 {
+        padding: 10px 0;
+    }
+
+    .categorys {
+        gap: 10px;
+        width: auto;
+        padding: 0px;
+        justify-content: center;
+    }
 }

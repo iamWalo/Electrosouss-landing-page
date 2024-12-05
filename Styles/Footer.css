@@ -171,3 +171,34 @@ form {
 .back-to-top a:hover {
     color: var(--clr-3);
 }
+
+@media (max-width: 966px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-container .footer-section:nth-child(1) {
+        grid-column: 1/4;
+        grid-row: 1;
+        display: flex;
+        font-size: 16px;
+    }
+
+    .footer-section ul li a {
+        font-size: 14px;
+    }
+
+    form {
+        display: block;
+    }
+
+    form button {
+        margin-top: 10px;
+    }
+
+    .newsletter input[type="email"] {
+        width: 240px;
+        padding: 10px;
+    }
+}

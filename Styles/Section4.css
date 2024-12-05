@@ -17,3 +17,30 @@
 .fa-heart::before {
     cursor: pointer;
 }
+
+@media (max-width: 966px) {
+
+    .Section4 .products {
+        grid-template-columns: repeat(3, auto);
+        gap: 15px;
+        grid-row-gap: 50px;
+    }
+
+    .Section4 .product-card {
+        overflow-x: scroll;
+        width: 230px;
+        height: auto;
+    }
+
+
+    /* Product Image */
+    .Section4 .product-card .add-to-cart {
+        padding: 8px;
+    }
+
+    .Section4 .product-card .product-price {
+        gap: 0;
+        line-height: 15px;
+    }
+
+}
