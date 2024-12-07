@@ -135,6 +135,9 @@ const container = document.getElementById("products-container");
 
 
 // إنشاء المنتجات وإضافتها إلى DOM
+if (window.innerWidth <= 520) {
+    products.length = 6;
+}
 products.forEach(product => {
     const productCard = document.createElement("div");
     productCard.className = "product-card";

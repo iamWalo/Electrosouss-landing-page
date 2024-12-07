@@ -73,3 +73,43 @@
         justify-content: center;
     }
 }
+
+@media (max-width: 692px) {
+    .categorys {
+        gap: 20px;
+    }
+
+    .category:nth-child(2),
+    .category:nth-child(5) {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .Section3 {
+        padding: 10px 0;
+    }
+
+    .categorys {
+        width: 100%;
+        gap: 8px;
+    }
+
+
+
+    .category {
+        width: 100px;
+        height: 72px;
+    }
+
+    .category p {
+        font-size: 9px;
+        line-height: 12px;
+    }
+
+    .category svg {
+        width: 32px;
+        height: 32px;
+    }
+}

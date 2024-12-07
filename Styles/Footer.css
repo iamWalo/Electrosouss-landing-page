@@ -202,3 +202,34 @@ form {
         padding: 10px;
     }
 }
+
+@media (max-width: 450px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container .footer-section:nth-child(1) {
+        grid-column: auto;
+        grid-row: auto;
+        display: block;
+        font-size: 16px;
+    }
+
+    .footer-section ul li a {
+        font-size: 14px;
+    }
+
+    form {
+        display: block;
+    }
+
+    form button {
+        margin-top: 10px;
+    }
+
+    .newsletter input[type="email"] {
+        width: 240px;
+        padding: 10px;
+    }
+}

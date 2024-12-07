@@ -168,6 +168,7 @@
 }
 
 @media (max-width:966px) {
+
     .display-none {
         display: flex;
     }
@@ -187,9 +188,12 @@
     }
 
     .product-card {
-        overflow-x: scroll;
         width: 280px;
         height: 450px;
+    }
+
+    .products::-webkit-scrollbar {
+        display: none;
     }
 
 
@@ -247,4 +251,16 @@
 
 
 
+}
+
+@media (max-width: 450px) {
+    .Section2-title {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .Section2-title h2::before {
+        height: 30px;
+    }
 }
