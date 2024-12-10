@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .Section4 {
     display: flex;
     flex-direction: column;
@@ -101,4 +102,109 @@
         text-decoration: line-through;
         margin-left: 0px;
     }
+=======
+.Section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0 130px 0;
+}
+
+.Section4 .products {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    gap: 40px;
+    grid-row-gap: 50px;
+}
+
+.fa-heart::before {
+    cursor: pointer;
+}
+
+@media (max-width: 966px) {
+
+    .Section4 .products {
+        grid-template-columns: repeat(3, auto);
+        gap: 15px;
+        grid-row-gap: 50px;
+    }
+
+    .Section4 .product-card {
+        width: 230px;
+        height: auto;
+    }
+
+
+    /* Product Image */
+    .Section4 .product-card .add-to-cart {
+        padding: 8px;
+    }
+
+    .Section4 .product-card .product-price {
+        gap: 0;
+        line-height: 15px;
+    }
+
+}
+
+@media (max-width:450px) {
+
+    .Section4 .products {
+        grid-template-columns: repeat(2, auto);
+        gap: 6px;
+        grid-row-gap: 50px;
+    }
+
+    .Section4 .product-card {
+        display: flex;
+        width: 155px;
+        padding: 3px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .Section4 .product-card .product-details {
+        padding: 5px;
+    }
+
+    .Section4 .product-card img {
+        height: 139px;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .Section4 .product-card .product-title {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15px;
+
+    }
+
+
+
+    /* Product Image */
+    .Section4 .product-card .add-to-cart {
+        padding: 8px;
+    }
+
+    .Section4 .product-card .product-price {
+        font-size: 12px;
+    }
+
+    .Section4 .product-card .product-price div {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .product-card .product-price .old-price {
+        font-size: 8px;
+        color: var(--clr-1);
+        text-decoration: line-through;
+        margin-left: 0px;
+    }
+>>>>>>> 44a83dd (initial commit -m "initialisation with git")
 }

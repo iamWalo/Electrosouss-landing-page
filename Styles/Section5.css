@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --black-clr: #000;
     --white-clr: #fff;
@@ -71,4 +72,79 @@
         padding: 0 20px 20px 20px;
         position: relative;
     }
+=======
+:root {
+    --black-clr: #000;
+    --white-clr: #fff;
+    --clr-1: #888;
+    --clr-2: #ED1C24;
+    --clr-3: #007BFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Section5 .categorys {
+    gap: 20px;
+    padding: 0px 270px;
+}
+
+.Section5 .category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    width: 150px;
+    height: 110px;
+}
+
+.Section5 .category img {
+    width: 110px;
+}
+
+.Section5 .category:hover {
+    background-color: transparent;
+}
+
+.white-div {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .Section5 {
+        padding: 0 70px 70px 70px;
+        position: relative;
+    }
+
+    .Section5 .Section2-title {
+        position: relative;
+        left: 5px;
+    }
+
+    .Section5 .categorys {
+        width: 100%;
+        overflow-x: auto;
+        padding: 0;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin: 0;
+        justify-content: flex-start;
+        scroll-snap-type: x mandatory;
+        scroll-snap-align: center;
+    }
+
+    .Section5 .categorys::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .Section5 {
+        padding: 0 20px 20px 20px;
+        position: relative;
+    }
+>>>>>>> 44a83dd (initial commit -m "initialisation with git")
 }
