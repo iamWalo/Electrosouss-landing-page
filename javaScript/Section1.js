@@ -46,15 +46,15 @@ const showSidebar = () => {
     } else {
         sideBar.style.display = 'block'
     }
-=======
 
 
-const liLink = document.querySelector('.sidebar')
-const sideBar = document.querySelector('.sidebar');
-liLink.addEventListener('click', () => {
-    const showDiv = document.createElement('div');
-    showDiv.className = 'show-div'
-    showDiv.innerHTML = `
+
+    const liLink = document.querySelector('.sidebar')
+    const sideBar = document.querySelector('.sidebar');
+    liLink.addEventListener('click', () => {
+        const showDiv = document.createElement('div');
+        showDiv.className = 'show-div'
+        showDiv.innerHTML = `
          <ul>
                     <li>
                         <i class="fa-solid fa-blender"></i><span>Lorem ipsum dolor sit.</span>
@@ -77,22 +77,22 @@ liLink.addEventListener('click', () => {
                 </ul>
         `;
 
-    if (sideBar.children[1]) {
-        sideBar.removeChild(sideBar.children[1]);
-    } else {
-        sideBar.appendChild(showDiv);
+        if (sideBar.children[1]) {
+            sideBar.removeChild(sideBar.children[1]);
+        } else {
+            sideBar.appendChild(showDiv);
+        }
+
+    })
+
+    console.log('hello world');
+
+
+    const showSidebar = () => {
+        if (sideBar.style.display === 'block') {
+            sideBar.style.display = 'none';
+        } else {
+            sideBar.style.display = 'block'
+        }
     }
-
-})
-
-console.log('hello world');
-
-
-const showSidebar = () => {
-    if (sideBar.style.display === 'block') {
-        sideBar.style.display = 'none';
-    } else {
-        sideBar.style.display = 'block'
-    }
->>>>>>> 44a83dd (initial commit -m "initialisation with git")
 }
