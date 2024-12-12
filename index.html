@@ -1,869 +1,439 @@
-<<<<<<< HEAD <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Electrosouss</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrosouss</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="Styles/Header.css">
-        <link rel="stylesheet" href="Styles/Section1.css">
-        <link rel="stylesheet" href="Styles/Section2.css">
-        <link rel="stylesheet" href="Styles/Section3.css">
-        <link rel="stylesheet" href="Styles/Section4.css">
-        <link rel="stylesheet" href="Styles/Section5.css">
-        <link rel="stylesheet" href="Styles/Section6.css">
-        <link rel="stylesheet" href="Styles/Footer.css">
-    </head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/Header.css">
+    <link rel="stylesheet" href="Styles/Section1.css">
+    <link rel="stylesheet" href="Styles/Section2.css">
+    <link rel="stylesheet" href="Styles/Section3.css">
+    <link rel="stylesheet" href="Styles/Section4.css">
+    <link rel="stylesheet" href="Styles/Section5.css">
+    <link rel="stylesheet" href="Styles/Section6.css">
+    <link rel="stylesheet" href="Styles/Footer.css">
+</head>
 
-    <body>
-        <div id="loader">
-            <span>Loading...</span>
-        </div>
-        <!--HEADER                            -->
-        <div id="content">
-            <header>
-                <div class="show-sidebar-for-mobile">
-                    <button onclick="showSidebar()"><i class="fa-solid fa-bars"></i></button>
+<body>
+    <div id="loader">
+        <span>Loading...</span>
+    </div>
+    <!--HEADER                            -->
+    <div id="content">
+        <header>
+            <div class="show-sidebar-for-mobile">
+                <button onclick="showSidebar()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img class="logo-for-pc" src="images/logo.png" alt="Logo">
+                    <img class="logo-for-mobile" src="images/logo-for-mobile.png" alt="Logo"></a>
+            </div>
+
+            <div class="header-right">
+                <div class="search-bar ">
+                    <input type="text" placeholder="What are you looking for?">
+                    <i class="fas fa-search"></i>
                 </div>
-                <div class="logo">
-                    <a href="index.html">
-                        <img class="logo-for-pc" src="images/logo.png" alt="Logo">
-                        <img class="logo-for-mobile" src="images/logo-for-mobile.png" alt="Logo"></a>
-                </div>
 
-                <div class="header-right">
-                    <div class="search-bar ">
-                        <input type="text" placeholder="What are you looking for?">
-                        <i class="fas fa-search"></i>
+                <div class="icons heart">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="far fa-user"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    <div class="dropdown">
+                        <span>En</span>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
+                </div>
+            </div>
+            <div class="bottom-div">
+                <div class="res-categorys-button">
+                    <button onclick="showSidebar()"><i class="fa-solid fa-bars"></i>Categorys</button>
+                </div>
+                <div class="search-bar resposive-search-bar ">
+                    <input type="text" placeholder="What are you looking for?">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
 
-                    <div class="icons heart">
-                        <a href="#"><i class="far fa-heart"></i></a>
-                        <a href="#"><i class="far fa-user"></i></a>
-                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                        <div class="dropdown">
-                            <span>En</span>
-                            <i class="fas fa-chevron-down"></i>
+        </header>
+        <!--SECTION 1                         -->
+        <section class="Seciton1">
+            <div class="sidebar ">
+                <ul>
+                    <li class="li-link">Big Household Appliances <i class="fa-solid fa-chevron-right"></i></li>
+                    <li>Small Household Appliances <i class="fa-solid fa-chevron-right"></i></li>
+                    <li>Phone, Tablet & Smart Watch <i class="fa-solid fa-chevron-right"></i></li>
+                    <li>Beauty & Well-Being Audio & HiFi <i class="fa-solid fa-chevron-right"></i></li>
+                    <li>Informatique <i class="fa-solid fa-chevron-right"></i></li>
+                    <li>Home Comfort <i class="fa-solid fa-chevron-right"></i></li>
+                    <li>Laundry Care <i class="fa-solid fa-chevron-right"></i></li>
+                    <li>Freezer <i class="fa-solid fa-chevron-right"></i></li>
+                    <li>Gaming <i class="fa-solid fa-chevron-right"></i></li>
+                    <li>Cooking Plate <i class="fa-solid fa-chevron-right"></i></li>
+                    <li>Extractor Hood <i class="fa-solid fa-chevron-right"></i></li>
+                </ul>
+            </div>
+
+            <div class="main-cotent">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/Section1-img-1.png" alt="Image 1">
+                        </div>
+                        <div class="swiper-slide"><img src="images/Section1-img-2.png" alt="Image 2">
+                        </div>
+                        <div class="swiper-slide"><img src="images/Section1-img-3.png" alt="Image 3">
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="bottom-div">
-                    <div class="res-categorys-button">
-                        <button onclick="showSidebar()"><i class="fa-solid fa-bars"></i>Categorys</button>
-                    </div>
-                    <div class="search-bar resposive-search-bar ">
-                        <input type="text" placeholder="What are you looking for?">
-                        <i class="fas fa-search"></i>
-                    </div>
-                </div>
+            </div>
 
-            </header>
-            <!--SECTION 1                         -->
-            <section class="Seciton1">
-                <div class="sidebar ">
+        </section>
+        <!--SECTION 2                         -->
+        <section class="Section2">
+            <div class="Section2-title">
+                <h2>Offers</h2>
+            </div>
+            <div class="products">
+                <div class="product-card">
+                    <img src="images/Section2-product-img-1.png" alt="Product Image">
+                    <div class="product-details">
+                        <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
+                        <div class="product-price">
+                            <div>
+                                5.499,00 DH <span class="old-price">8.799,00 DH</span>
+                            </div>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="reviews">(56)</span>
+                        </div>
+                        <button class="add-to-cart">Add To Card</button>
+                    </div>
+                </div>
+                <div class="product-card display-none">
+                    <img src="images/Section2-product-img-4.png" alt="Product Image">
+                    <div class="product-details">
+                        <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
+                        <div class="product-price">
+                            <div>
+                                5.499,00 DH <span class="old-price">8.799,00 DH</span>
+                            </div>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="reviews">(56)</span>
+                        </div>
+                        <button class="add-to-cart">Add To Card</button>
+                    </div>
+                </div>
+                <div class="product-card display-none">
+                    <img src="images/Section2-product-img-2.png" alt="Product Image">
+                    <div class="product-details">
+                        <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
+                        <div class="product-price">
+                            <div>
+                                5.499,00 DH <span class="old-price">8.799,00 DH</span>
+                            </div>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="reviews">(56)</span>
+                        </div>
+                        <button class="add-to-cart">Add To Card</button>
+                    </div>
+                </div>
+                <div class="product-card display-none">
+                    <img src="images/Section2-product-img-3.png" alt="Product Image">
+                    <div class="product-details">
+                        <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
+                        <div class="product-price">
+                            <div>
+                                5.499,00 DH <span class="old-price">8.799,00 DH</span>
+                            </div>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="reviews">(56)</span>
+                        </div>
+                        <button class="add-to-cart">Add To Card</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/Section2-product-img-2.png" alt="Product Image">
+                    <div class="product-details">
+                        <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
+                        <div class="product-price">
+                            <div>
+                                5.499,00 DH <span class="old-price">8.799,00 DH</span>
+                            </div>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="reviews">(56)</span>
+                        </div>
+                        <button class="add-to-cart">Add To Card</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/Section2-product-img-3.png" alt="Product Image">
+                    <div class="product-details">
+                        <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
+                        <div class="product-price">
+                            <div>
+                                5.499,00 DH <span class="old-price">8.799,00 DH</span>
+                            </div>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="reviews">(56)</span>
+                        </div>
+                        <button class="add-to-cart">Add To Card</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="images/Section2-product-img-4.png" alt="Product Image">
+                    <div class="product-details">
+                        <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
+                        <div class="product-price">
+                            <div>
+                                5.499,00 DH <span class="old-price">8.799,00 DH</span>
+                            </div>
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="reviews">(56)</span>
+                        </div>
+                        <button class="add-to-cart">Add To Card</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--SECTION 3                         -->
+        <section class="Section3">
+            <div class="Section2-title">
+                <h2>category</h2>
+            </div>
+            <div class="categorys">
+                <div class="category">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                        <path
+                            d="M28.8 44.8004C28.3757 44.8004 27.9687 44.969 27.6686 45.269C27.3686 45.5691 27.2 45.976 27.2 46.4004C27.2 46.8247 27.3686 47.2317 27.6686 47.5318C27.9687 47.8318 28.3757 48.0004 28.8 48.0004H35.2C35.6243 48.0004 36.0313 47.8318 36.3314 47.5318C36.6314 47.2317 36.8 46.8247 36.8 46.4004C36.8 45.976 36.6314 45.5691 36.3314 45.269C36.0313 44.969 35.6243 44.8004 35.2 44.8004H28.8ZM22.4 6.40039C20.7026 6.40039 19.0747 7.07467 17.8745 8.27491C16.6743 9.47514 16 11.103 16 12.8004V51.2004C16 52.8978 16.6743 54.5256 17.8745 55.7259C19.0747 56.9261 20.7026 57.6004 22.4 57.6004H41.6C43.2974 57.6004 44.9252 56.9261 46.1255 55.7259C47.3257 54.5256 48 52.8978 48 51.2004V12.8004C48 11.103 47.3257 9.47514 46.1255 8.27491C44.9252 7.07467 43.2974 6.40039 41.6 6.40039H22.4ZM19.2 12.8004C19.2 11.9517 19.5371 11.1378 20.1373 10.5376C20.7374 9.93753 21.5513 9.60039 22.4 9.60039H41.6C42.4487 9.60039 43.2626 9.93753 43.8627 10.5376C44.4629 11.1378 44.8 11.9517 44.8 12.8004V51.2004C44.8 52.0491 44.4629 52.863 43.8627 53.4631C43.2626 54.0633 42.4487 54.4004 41.6 54.4004H22.4C21.5513 54.4004 20.7374 54.0633 20.1373 53.4631C19.5371 52.863 19.2 52.0491 19.2 51.2004V12.8004Z"
+                            fill="black" />
+                    </svg>
+                    <p>PHONE, TABLET AND SMART WATCh</p>
+                </div>
+                <div class="category">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
+                        <path
+                            d="M38.8889 48.625C38.8889 48.8571 38.9796 49.0796 39.1411 49.2437C39.3026 49.4078 39.5216 49.5 39.75 49.5H43.1944C43.4228 49.5 43.6419 49.4078 43.8033 49.2437C43.9648 49.0796 44.0556 48.8571 44.0556 48.625C44.0556 48.3929 43.9648 48.1704 43.8033 48.0063C43.6419 47.8422 43.4228 47.75 43.1944 47.75H39.75C39.5216 47.75 39.3026 47.8422 39.1411 48.0063C38.9796 48.1704 38.8889 48.3929 38.8889 48.625ZM41.4722 14.5C40.9613 14.5 40.4618 14.654 40.037 14.9424C39.6122 15.2308 39.2811 15.6408 39.0855 16.1205C38.89 16.6001 38.8388 17.1279 38.9385 17.6371C39.0382 18.1463 39.2842 18.614 39.6455 18.9812C40.0068 19.3483 40.4671 19.5983 40.9682 19.6996C41.4694 19.8008 41.9888 19.7489 42.4608 19.5502C42.9329 19.3515 43.3363 19.0151 43.6202 18.5834C43.904 18.1517 44.0556 17.6442 44.0556 17.125C44.0556 16.4288 43.7834 15.7611 43.2989 15.2688C42.8144 14.7766 42.1574 14.5 41.4722 14.5ZM41.4722 18C41.3019 18 41.1354 17.9487 40.9938 17.8525C40.8522 17.7564 40.7418 17.6197 40.6767 17.4598C40.6115 17.3 40.5944 17.124 40.6277 16.9543C40.6609 16.7846 40.7429 16.6287 40.8633 16.5063C40.9838 16.3839 41.1372 16.3006 41.3042 16.2668C41.4713 16.2331 41.6444 16.2504 41.8018 16.3166C41.9591 16.3828 42.0936 16.495 42.1882 16.6389C42.2828 16.7828 42.3333 16.9519 42.3333 17.125C42.3333 17.3571 42.2426 17.5796 42.0811 17.7437C41.9196 17.9078 41.7006 18 41.4722 18ZM32 47.75C34.0437 47.75 36.0416 47.1342 37.7409 45.9804C39.4402 44.8267 40.7647 43.1868 41.5468 41.2682C42.3289 39.3496 42.5335 37.2384 42.1348 35.2016C41.7361 33.1648 40.7519 31.2938 39.3068 29.8254C37.8616 28.3569 36.0204 27.3569 34.0159 26.9518C32.0115 26.5466 29.9338 26.7545 28.0456 27.5493C26.1574 28.344 24.5436 29.6898 23.4081 31.4165C22.2727 33.1432 21.6667 35.1733 21.6667 37.25C21.6667 40.0348 22.7554 42.7055 24.6932 44.6746C26.6311 46.6438 29.2594 47.75 32 47.75ZM32 28.5C33.7031 28.5 35.368 29.0132 36.7841 29.9746C38.2002 30.9361 39.3039 32.3027 39.9556 33.9015C40.6074 35.5004 40.7779 37.2597 40.4457 38.957C40.1134 40.6544 39.2933 42.2135 38.089 43.4372C36.8847 44.6609 35.3503 45.4943 33.6799 45.8319C32.0096 46.1695 30.2781 45.9962 28.7047 45.334C27.1312 44.6717 25.7863 43.5502 24.8401 42.1112C23.8939 40.6723 23.3889 38.9806 23.3889 37.25C23.3889 34.9294 24.2961 32.7038 25.911 31.0628C27.5259 29.4219 29.7162 28.5 32 28.5ZM43.1944 11H20.8056C19.6637 11 18.5685 11.4609 17.7611 12.2814C16.9536 13.1019 16.5 14.2147 16.5 15.375V48.625C16.5 49.1995 16.6114 49.7684 16.8277 50.2992C17.0441 50.83 17.3613 51.3123 17.7611 51.7186C18.1609 52.1248 18.6355 52.4471 19.1579 52.667C19.6803 52.8868 20.2401 53 20.8056 53H43.1944C43.7599 53 44.3197 52.8868 44.8421 52.667C45.3645 52.4471 45.8391 52.1248 46.2389 51.7186C46.6387 51.3123 46.9559 50.83 47.1723 50.2992C47.3886 49.7684 47.5 49.1995 47.5 48.625V15.375C47.5 14.2147 47.0464 13.1019 46.2389 12.2814C45.4315 11.4609 44.3363 11 43.1944 11ZM21.6667 12.75H30.2778V17.125C30.2778 17.3571 30.1871 17.5796 30.0256 17.7437C29.8641 17.9078 29.645 18 29.4167 18H22.5278C22.2994 18 22.0804 17.9078 21.9189 17.7437C21.7574 17.5796 21.6667 17.3571 21.6667 17.125V12.75ZM45.7778 48.625C45.7778 49.3212 45.5056 49.9889 45.0211 50.4812C44.5367 50.9734 43.8796 51.25 43.1944 51.25H20.8056C20.1204 51.25 19.4633 50.9734 18.9789 50.4812C18.4944 49.9889 18.2222 49.3212 18.2222 48.625V23.25H45.7778V48.625ZM45.7778 21.5H18.2222V15.375C18.2237 14.8334 18.39 14.3056 18.6984 13.8638C19.0067 13.4221 19.4419 13.088 19.9444 12.9075V17.125C19.9444 17.8212 20.2166 18.4889 20.7011 18.9812C21.1856 19.4734 21.8426 19.75 22.5278 19.75H29.4167C30.1018 19.75 30.7589 19.4734 31.2434 18.9812C31.7278 18.4889 32 17.8212 32 17.125V12.75H43.1944C43.8796 12.75 44.5367 13.0266 45.0211 13.5188C45.5056 14.0111 45.7778 14.6788 45.7778 15.375V21.5ZM36.3056 18C36.1352 18 35.9688 18.0513 35.8271 18.1475C35.6855 18.2436 35.5752 18.3803 35.51 18.5402C35.4448 18.7 35.4278 18.876 35.461 19.0457C35.4942 19.2154 35.5762 19.3713 35.6967 19.4937C35.8171 19.6161 35.9705 19.6994 36.1376 19.7332C36.3046 19.7669 36.4777 19.7496 36.6351 19.6834C36.7924 19.6172 36.9269 19.505 37.0215 19.3611C37.1162 19.2172 37.1667 19.0481 37.1667 18.875C37.1667 18.6429 37.0759 18.4204 36.9145 18.2563C36.753 18.0922 36.5339 18 36.3056 18ZM32 44.25C33.3625 44.25 34.6944 43.8395 35.8273 43.0703C36.9601 42.3011 37.8431 41.2079 38.3645 39.9288C38.8859 38.6497 39.0223 37.2422 38.7565 35.8844C38.4907 34.5265 37.8346 33.2792 36.8712 32.3003C35.9078 31.3213 34.6803 30.6546 33.344 30.3845C32.0076 30.1144 30.6225 30.253 29.3637 30.7828C28.105 31.3127 27.0291 32.2099 26.2721 33.361C25.5151 34.5122 25.1111 35.8655 25.1111 37.25C25.1111 39.1065 25.8369 40.887 27.1288 42.1997C28.4207 43.5125 30.173 44.25 32 44.25ZM32 32C33.2186 32.0033 34.3968 32.4442 35.3265 33.2448C36.2562 34.0453 36.8775 35.1541 37.0806 36.375H36.3056C36.0772 36.375 35.8581 36.4672 35.6967 36.6313C35.5352 36.7954 35.4444 37.0179 35.4444 37.25C35.4444 37.4821 35.5352 37.7046 35.6967 37.8687C35.8581 38.0328 36.0772 38.125 36.3056 38.125H37.0806C36.9163 39.1125 36.4774 40.0317 35.8158 40.7741C35.1542 41.5165 34.2974 42.051 33.3465 42.3147C32.3957 42.5784 31.3904 42.5603 30.4494 42.2624C29.5083 41.9645 28.6708 41.3993 28.0356 40.6335C27.4004 39.8677 26.994 38.9332 26.8644 37.9404C26.7347 36.9475 26.8873 35.9377 27.3041 35.0301C27.7209 34.1225 28.3844 33.355 29.2165 32.8181C30.0485 32.2812 31.0144 31.9973 32 32Z"
+                            fill="black" />
+                    </svg>
+                    <p>BIG HOUSEHOLD APPLIANCES</p>
+                </div>
+                <div class="category">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="carbon:game-console">
+                            <path id="Vector"
+                                d="M15.0198 51.9996C14.0472 52.0008 13.0788 51.873 12.1398 51.6196C9.32158 50.8159 6.93064 48.9397 5.47991 46.3934C4.02917 43.8472 3.63422 40.8337 4.37978 37.9996L9.03978 20.3196C9.40269 18.8887 10.0479 17.5448 10.9374 16.3668C11.8269 15.1887 12.9429 14.2003 14.2198 13.4596C15.463 12.7395 16.8368 12.2732 18.2616 12.0879C19.6863 11.9025 21.1336 12.0016 22.5198 12.3796C23.9933 12.7888 25.3657 13.4996 26.55 14.467C27.7343 15.4345 28.7048 16.6374 29.3998 17.9996H34.5998C35.2928 16.636 36.2626 15.4318 37.4472 14.4642C38.6318 13.4965 40.0053 12.7865 41.4798 12.3796C42.8659 12.0016 44.3133 11.9025 45.738 12.0879C47.1627 12.2732 48.5365 12.7395 49.7798 13.4596C51.0504 14.1984 52.1623 15.1814 53.0513 16.3519C53.9404 17.5224 54.589 18.8573 54.9598 20.2796L59.6198 37.9996C60.3765 40.842 59.9847 43.8679 58.5289 46.4239C57.0732 48.9798 54.6705 50.8604 51.8398 51.6596C50.4536 52.0376 49.0063 52.1367 47.5816 51.9513C46.1568 51.7659 44.783 51.2997 43.5398 50.5796C42.267 49.8434 41.1535 48.8612 40.2642 47.6903C39.3749 46.5194 38.7275 45.1832 38.3598 43.7596L37.9998 41.9996H25.9998L25.5398 43.7196C25.1721 45.1432 24.5247 46.4794 23.6353 47.6503C22.746 48.8212 21.6325 49.8034 20.3598 50.5396C18.7347 51.4769 16.8956 51.9797 15.0198 51.9996ZM19.6598 15.9996C18.453 16.0046 17.268 16.3215 16.2198 16.9196C14.5775 17.8832 13.3837 19.458 12.8998 21.2996L8.23978 38.9796C7.75215 40.8011 7.99854 42.7412 8.92601 44.3829C9.85348 46.0247 11.388 47.2371 13.1998 47.7596C14.0748 47.9983 14.9884 48.0611 15.8879 47.9443C16.7873 47.8276 17.6547 47.5337 18.4398 47.0796C19.2572 46.6077 19.972 45.9771 20.5421 45.2249C21.1123 44.4727 21.5263 43.6141 21.7598 42.6996L22.9998 37.9996H40.9998L42.2198 42.6996C42.4574 43.6124 42.873 44.4692 43.4428 45.2208C44.0125 45.9725 44.7252 46.6042 45.5398 47.0796C46.3287 47.5333 47.1995 47.8268 48.102 47.9435C49.0046 48.0602 49.9214 47.9977 50.7998 47.7596C52.6137 47.242 54.1502 46.0294 55.0752 44.3854C56.0001 42.7414 56.239 40.7987 55.7398 38.9796L51.0798 21.2996C50.8476 20.3872 50.4363 19.5301 49.8697 18.7781C49.3032 18.0262 48.5928 17.3944 47.7798 16.9196C46.9908 16.4659 46.1201 16.1723 45.2175 16.0557C44.3149 15.939 43.3982 16.0015 42.5198 16.2396C41.4335 16.5492 40.4367 17.1136 39.6123 17.8858C38.7879 18.6581 38.1597 19.6158 37.7798 20.6796L37.2998 21.9996H26.6998L26.2198 20.6796C25.8365 19.6144 25.2047 18.656 24.3769 17.8838C23.549 17.1116 22.549 16.548 21.4598 16.2396C20.8727 16.0818 20.2677 16.0011 19.6598 15.9996Z"
+                                fill="black" />
+                            <path id="Vector_2"
+                                d="M20 32C19.2089 32 18.4355 31.7654 17.7777 31.3259C17.1199 30.8864 16.6072 30.2616 16.3045 29.5307C16.0017 28.7998 15.9225 27.9956 16.0769 27.2196C16.2312 26.4437 16.6122 25.731 17.1716 25.1716C17.731 24.6122 18.4437 24.2312 19.2196 24.0769C19.9956 23.9225 20.7998 24.0017 21.5307 24.3045C22.2616 24.6072 22.8864 25.1199 23.3259 25.7777C23.7654 26.4355 24 27.2089 24 28C24 29.0609 23.5786 30.0783 22.8284 30.8284C22.0783 31.5786 21.0609 32 20 32Z"
+                                fill="black" />
+                            <path id="Vector_3"
+                                d="M44 26C45.1046 26 46 25.1046 46 24C46 22.8954 45.1046 22 44 22C42.8954 22 42 22.8954 42 24C42 25.1046 42.8954 26 44 26Z"
+                                fill="black" />
+                            <path id="Vector_4"
+                                d="M44 34C45.1046 34 46 33.1046 46 32C46 30.8954 45.1046 30 44 30C42.8954 30 42 30.8954 42 32C42 33.1046 42.8954 34 44 34Z"
+                                fill="black" />
+                            <path id="Vector_5"
+                                d="M40 30C41.1046 30 42 29.1046 42 28C42 26.8954 41.1046 26 40 26C38.8954 26 38 26.8954 38 28C38 29.1046 38.8954 30 40 30Z"
+                                fill="black" />
+                            <path id="Vector_6"
+                                d="M48 30C49.1046 30 50 29.1046 50 28C50 26.8954 49.1046 26 48 26C46.8954 26 46 26.8954 46 28C46 29.1046 46.8954 30 48 30Z"
+                                fill="black" />
+                        </g>
+                    </svg>
+
+                    <p>GAMING</p>
+                </div>
+                <div class="category">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
+                        <path
+                            d="M24.5 53.3337V48.0003H12.8093C11.5809 48.0003 10.556 47.5897 9.73467 46.7683C8.91333 45.947 8.50178 44.9212 8.5 43.691V14.9763C8.5 13.7479 8.91156 12.723 9.73467 11.9017C10.5578 11.0803 11.5818 10.6688 12.8067 10.667H52.1933C53.42 10.667 54.444 11.0785 55.2653 11.9017C56.0867 12.7248 56.4982 13.7497 56.5 14.9763V43.6937C56.5 44.9203 56.0884 45.9452 55.2653 46.7683C54.4422 47.5914 53.4182 48.0021 52.1933 48.0003H40.5V53.3337H24.5ZM12.8093 45.3337H52.1933C52.6022 45.3337 52.9782 45.163 53.3213 44.8217C53.6644 44.4803 53.8351 44.1034 53.8333 43.691V14.9763C53.8333 14.5657 53.6627 14.1888 53.3213 13.8457C52.98 13.5025 52.604 13.3319 52.1933 13.3337H12.8067C12.3978 13.3337 12.0218 13.5043 11.6787 13.8457C11.3356 14.187 11.1649 14.5639 11.1667 14.9763V43.6937C11.1667 44.1026 11.3373 44.4785 11.6787 44.8217C12.02 45.1648 12.396 45.3354 12.8067 45.3337"
+                            fill="black" />
+                    </svg>
+                    <p>TV, VIDEO,
+                        HOME-CINEMA</p>
+                </div>
+                <div class="category">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                        <path
+                            d="M20.8213 56.0002C20.0728 56.0002 19.4408 55.7424 18.9253 55.2269C18.4097 54.7131 18.152 54.082 18.152 53.3335V50.6669C18.152 48.8855 18.5911 47.2002 19.4693 45.6109C20.3475 44.0215 21.6222 42.6953 23.2933 41.6322L21.2666 28.5122H17.0266C15.8 28.5122 14.7751 28.1015 13.952 27.2802C13.1288 26.4589 12.7173 25.434 12.7173 24.2055V14.9762C12.7173 13.7815 13.1368 12.7647 13.976 11.9255C14.8168 11.0864 15.8337 10.6669 17.0266 10.6669H26.6666C26.7804 10.178 27.016 9.71399 27.3733 9.27488C27.7288 8.83577 28.1768 8.61621 28.7173 8.61621H35.2826C35.8231 8.61621 36.272 8.83577 36.6293 9.27488C36.9848 9.71399 37.2195 10.178 37.3333 10.6669H42.9546C43.6177 10.6669 44.1671 10.9184 44.6026 11.4215C45.0382 11.9247 45.2071 12.5069 45.1093 13.1682L40.7093 41.6322C42.3804 42.6953 43.6542 44.0215 44.5306 45.6109C45.4071 47.2002 45.8453 48.8855 45.8453 50.6669V53.3335C45.8453 54.082 45.5884 54.7131 45.0746 55.2269C44.5591 55.7424 43.928 56.0002 43.1813 56.0002H20.8213ZM20.8746 25.8455L18.92 13.3335H17.0266C16.6177 13.3335 16.2417 13.5042 15.8986 13.8455C15.5555 14.1869 15.3848 14.5629 15.3866 14.9735V24.2055C15.3866 24.6144 15.5573 24.9904 15.8986 25.3335C16.24 25.6767 16.616 25.8473 17.0266 25.8455H20.8746ZM32 50.0535C32.5848 50.0535 33.0728 49.858 33.464 49.4669C33.8551 49.0758 34.0506 48.5878 34.0506 48.0029C34.0506 47.418 33.8551 46.93 33.464 46.5389C33.0728 46.1478 32.5848 45.9522 32 45.9522C31.4151 45.9522 30.9271 46.1478 30.536 46.5389C30.1448 46.93 29.9493 47.418 29.9493 48.0029C29.9493 48.5878 30.1448 49.0758 30.536 49.4669C30.9271 49.858 31.4151 50.0535 32 50.0535ZM25.7653 40.0002H38.2373L42.3466 13.3335H21.6506L25.7653 40.0002ZM20.8213 53.3335H43.1786V50.6669C43.1786 48.4447 42.4008 46.5558 40.8453 45.0002C39.2897 43.4447 37.4008 42.6669 35.1786 42.6669H28.8213C26.5991 42.6669 24.7102 43.4447 23.1546 45.0002C21.5991 46.5558 20.8213 48.4447 20.8213 50.6669V53.3335Z"
+                            fill="black" />
+                    </svg>
+                    <p>SMALL HOUSEHOLD APPLIANCES</p>
+                </div>
+            </div>
+
+        </section>
+        <!--SECTION 4                         -->
+        <section class="Section4">
+            <div class="Section2-title">
+                <h2>Offers</h2>
+            </div>
+            <div id="products-container" class="products section4-products"></div>
+
+        </section>
+        <!--SECTION 5                         -->
+        <section class="Section5 Section3 ">
+            <div class="Section2-title">
+                <h2>our Marque</h2>
+            </div>
+            <div class="categorys" id="section-5-categorys">
+            </div>
+        </section>
+        <!--SECTION 6                         -->
+        <section class="Section6 Section3 ">
+            <div class="Section2-title">
+                <h2>our Services</h2>
+            </div>
+            <div class="categorys" id="section-6-categorys">
+            </div>
+        </section>
+        <!--FOOTER                            -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/footer-logo.png" alt="">
+                        <h3>Electrosouss</h3>
+                    </div>
                     <ul>
-                        <li class="li-link">Big Household Appliances <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Small Household Appliances <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Phone, Tablet & Smart Watch <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Beauty & Well-Being Audio & HiFi <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Informatique <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Home Comfort <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Laundry Care <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Freezer <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Gaming <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Cooking Plate <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Extractor Hood <i class="fa-solid fa-chevron-right"></i></li>
+                        <li><a href="#">Who Are We?</a></li>
+                        <li><a href="#">General Conditions Of Sale</a></li>
+                        <li><a href="#">Legal Information</a></li>
                     </ul>
                 </div>
-
-                <div class="main-cotent">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="images/Section1-img-1.png" alt="Image 1">
-                            </div>
-                            <div class="swiper-slide"><img src="images/Section1-img-2.png" alt="Image 2">
-                            </div>
-                            <div class="swiper-slide"><img src="images/Section1-img-3.png" alt="Image 3">
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-
-            </section>
-            <!--SECTION 2                         -->
-            <section class="Section2">
-                <div class="Section2-title">
-                    <h2>Offers</h2>
-                </div>
-                <div class="products">
-                    <div class="product-card">
-                        <img src="images/Section2-product-img-1.png" alt="Product Image">
-                        <div class="product-details">
-                            <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
-                            <div class="product-price">
-                                <div>
-                                    5.499,00 DH <span class="old-price">8.799,00 DH</span>
-                                </div>
-                                <div class="heart">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="reviews">(56)</span>
-                            </div>
-                            <button class="add-to-cart">Add To Card</button>
-                        </div>
-                    </div>
-                    <div class="product-card display-none">
-                        <img src="images/Section2-product-img-4.png" alt="Product Image">
-                        <div class="product-details">
-                            <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
-                            <div class="product-price">
-                                <div>
-                                    5.499,00 DH <span class="old-price">8.799,00 DH</span>
-                                </div>
-                                <div class="heart">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="reviews">(56)</span>
-                            </div>
-                            <button class="add-to-cart">Add To Card</button>
-                        </div>
-                    </div>
-                    <div class="product-card display-none">
-                        <img src="images/Section2-product-img-2.png" alt="Product Image">
-                        <div class="product-details">
-                            <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
-                            <div class="product-price">
-                                <div>
-                                    5.499,00 DH <span class="old-price">8.799,00 DH</span>
-                                </div>
-                                <div class="heart">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="reviews">(56)</span>
-                            </div>
-                            <button class="add-to-cart">Add To Card</button>
-                        </div>
-                    </div>
-                    <div class="product-card display-none">
-                        <img src="images/Section2-product-img-3.png" alt="Product Image">
-                        <div class="product-details">
-                            <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
-                            <div class="product-price">
-                                <div>
-                                    5.499,00 DH <span class="old-price">8.799,00 DH</span>
-                                </div>
-                                <div class="heart">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="reviews">(56)</span>
-                            </div>
-                            <button class="add-to-cart">Add To Card</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/Section2-product-img-2.png" alt="Product Image">
-                        <div class="product-details">
-                            <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
-                            <div class="product-price">
-                                <div>
-                                    5.499,00 DH <span class="old-price">8.799,00 DH</span>
-                                </div>
-                                <div class="heart">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="reviews">(56)</span>
-                            </div>
-                            <button class="add-to-cart">Add To Card</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/Section2-product-img-3.png" alt="Product Image">
-                        <div class="product-details">
-                            <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
-                            <div class="product-price">
-                                <div>
-                                    5.499,00 DH <span class="old-price">8.799,00 DH</span>
-                                </div>
-                                <div class="heart">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="reviews">(56)</span>
-                            </div>
-                            <button class="add-to-cart">Add To Card</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/Section2-product-img-4.png" alt="Product Image">
-                        <div class="product-details">
-                            <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
-                            <div class="product-price">
-                                <div>
-                                    5.499,00 DH <span class="old-price">8.799,00 DH</span>
-                                </div>
-                                <div class="heart">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="reviews">(56)</span>
-                            </div>
-                            <button class="add-to-cart">Add To Card</button>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-            <!--SECTION 3                         -->
-            <section class="Section3">
-                <div class="Section2-title">
-                    <h2>category</h2>
-                </div>
-                <div class="categorys">
-                    <div class="category">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-                            <path
-                                d="M28.8 44.8004C28.3757 44.8004 27.9687 44.969 27.6686 45.269C27.3686 45.5691 27.2 45.976 27.2 46.4004C27.2 46.8247 27.3686 47.2317 27.6686 47.5318C27.9687 47.8318 28.3757 48.0004 28.8 48.0004H35.2C35.6243 48.0004 36.0313 47.8318 36.3314 47.5318C36.6314 47.2317 36.8 46.8247 36.8 46.4004C36.8 45.976 36.6314 45.5691 36.3314 45.269C36.0313 44.969 35.6243 44.8004 35.2 44.8004H28.8ZM22.4 6.40039C20.7026 6.40039 19.0747 7.07467 17.8745 8.27491C16.6743 9.47514 16 11.103 16 12.8004V51.2004C16 52.8978 16.6743 54.5256 17.8745 55.7259C19.0747 56.9261 20.7026 57.6004 22.4 57.6004H41.6C43.2974 57.6004 44.9252 56.9261 46.1255 55.7259C47.3257 54.5256 48 52.8978 48 51.2004V12.8004C48 11.103 47.3257 9.47514 46.1255 8.27491C44.9252 7.07467 43.2974 6.40039 41.6 6.40039H22.4ZM19.2 12.8004C19.2 11.9517 19.5371 11.1378 20.1373 10.5376C20.7374 9.93753 21.5513 9.60039 22.4 9.60039H41.6C42.4487 9.60039 43.2626 9.93753 43.8627 10.5376C44.4629 11.1378 44.8 11.9517 44.8 12.8004V51.2004C44.8 52.0491 44.4629 52.863 43.8627 53.4631C43.2626 54.0633 42.4487 54.4004 41.6 54.4004H22.4C21.5513 54.4004 20.7374 54.0633 20.1373 53.4631C19.5371 52.863 19.2 52.0491 19.2 51.2004V12.8004Z"
-                                fill="black" />
-                        </svg>
-                        <p>PHONE, TABLET AND SMART WATCh</p>
-                    </div>
-                    <div class="category">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
-                            <path
-                                d="M38.8889 48.625C38.8889 48.8571 38.9796 49.0796 39.1411 49.2437C39.3026 49.4078 39.5216 49.5 39.75 49.5H43.1944C43.4228 49.5 43.6419 49.4078 43.8033 49.2437C43.9648 49.0796 44.0556 48.8571 44.0556 48.625C44.0556 48.3929 43.9648 48.1704 43.8033 48.0063C43.6419 47.8422 43.4228 47.75 43.1944 47.75H39.75C39.5216 47.75 39.3026 47.8422 39.1411 48.0063C38.9796 48.1704 38.8889 48.3929 38.8889 48.625ZM41.4722 14.5C40.9613 14.5 40.4618 14.654 40.037 14.9424C39.6122 15.2308 39.2811 15.6408 39.0855 16.1205C38.89 16.6001 38.8388 17.1279 38.9385 17.6371C39.0382 18.1463 39.2842 18.614 39.6455 18.9812C40.0068 19.3483 40.4671 19.5983 40.9682 19.6996C41.4694 19.8008 41.9888 19.7489 42.4608 19.5502C42.9329 19.3515 43.3363 19.0151 43.6202 18.5834C43.904 18.1517 44.0556 17.6442 44.0556 17.125C44.0556 16.4288 43.7834 15.7611 43.2989 15.2688C42.8144 14.7766 42.1574 14.5 41.4722 14.5ZM41.4722 18C41.3019 18 41.1354 17.9487 40.9938 17.8525C40.8522 17.7564 40.7418 17.6197 40.6767 17.4598C40.6115 17.3 40.5944 17.124 40.6277 16.9543C40.6609 16.7846 40.7429 16.6287 40.8633 16.5063C40.9838 16.3839 41.1372 16.3006 41.3042 16.2668C41.4713 16.2331 41.6444 16.2504 41.8018 16.3166C41.9591 16.3828 42.0936 16.495 42.1882 16.6389C42.2828 16.7828 42.3333 16.9519 42.3333 17.125C42.3333 17.3571 42.2426 17.5796 42.0811 17.7437C41.9196 17.9078 41.7006 18 41.4722 18ZM32 47.75C34.0437 47.75 36.0416 47.1342 37.7409 45.9804C39.4402 44.8267 40.7647 43.1868 41.5468 41.2682C42.3289 39.3496 42.5335 37.2384 42.1348 35.2016C41.7361 33.1648 40.7519 31.2938 39.3068 29.8254C37.8616 28.3569 36.0204 27.3569 34.0159 26.9518C32.0115 26.5466 29.9338 26.7545 28.0456 27.5493C26.1574 28.344 24.5436 29.6898 23.4081 31.4165C22.2727 33.1432 21.6667 35.1733 21.6667 37.25C21.6667 40.0348 22.7554 42.7055 24.6932 44.6746C26.6311 46.6438 29.2594 47.75 32 47.75ZM32 28.5C33.7031 28.5 35.368 29.0132 36.7841 29.9746C38.2002 30.9361 39.3039 32.3027 39.9556 33.9015C40.6074 35.5004 40.7779 37.2597 40.4457 38.957C40.1134 40.6544 39.2933 42.2135 38.089 43.4372C36.8847 44.6609 35.3503 45.4943 33.6799 45.8319C32.0096 46.1695 30.2781 45.9962 28.7047 45.334C27.1312 44.6717 25.7863 43.5502 24.8401 42.1112C23.8939 40.6723 23.3889 38.9806 23.3889 37.25C23.3889 34.9294 24.2961 32.7038 25.911 31.0628C27.5259 29.4219 29.7162 28.5 32 28.5ZM43.1944 11H20.8056C19.6637 11 18.5685 11.4609 17.7611 12.2814C16.9536 13.1019 16.5 14.2147 16.5 15.375V48.625C16.5 49.1995 16.6114 49.7684 16.8277 50.2992C17.0441 50.83 17.3613 51.3123 17.7611 51.7186C18.1609 52.1248 18.6355 52.4471 19.1579 52.667C19.6803 52.8868 20.2401 53 20.8056 53H43.1944C43.7599 53 44.3197 52.8868 44.8421 52.667C45.3645 52.4471 45.8391 52.1248 46.2389 51.7186C46.6387 51.3123 46.9559 50.83 47.1723 50.2992C47.3886 49.7684 47.5 49.1995 47.5 48.625V15.375C47.5 14.2147 47.0464 13.1019 46.2389 12.2814C45.4315 11.4609 44.3363 11 43.1944 11ZM21.6667 12.75H30.2778V17.125C30.2778 17.3571 30.1871 17.5796 30.0256 17.7437C29.8641 17.9078 29.645 18 29.4167 18H22.5278C22.2994 18 22.0804 17.9078 21.9189 17.7437C21.7574 17.5796 21.6667 17.3571 21.6667 17.125V12.75ZM45.7778 48.625C45.7778 49.3212 45.5056 49.9889 45.0211 50.4812C44.5367 50.9734 43.8796 51.25 43.1944 51.25H20.8056C20.1204 51.25 19.4633 50.9734 18.9789 50.4812C18.4944 49.9889 18.2222 49.3212 18.2222 48.625V23.25H45.7778V48.625ZM45.7778 21.5H18.2222V15.375C18.2237 14.8334 18.39 14.3056 18.6984 13.8638C19.0067 13.4221 19.4419 13.088 19.9444 12.9075V17.125C19.9444 17.8212 20.2166 18.4889 20.7011 18.9812C21.1856 19.4734 21.8426 19.75 22.5278 19.75H29.4167C30.1018 19.75 30.7589 19.4734 31.2434 18.9812C31.7278 18.4889 32 17.8212 32 17.125V12.75H43.1944C43.8796 12.75 44.5367 13.0266 45.0211 13.5188C45.5056 14.0111 45.7778 14.6788 45.7778 15.375V21.5ZM36.3056 18C36.1352 18 35.9688 18.0513 35.8271 18.1475C35.6855 18.2436 35.5752 18.3803 35.51 18.5402C35.4448 18.7 35.4278 18.876 35.461 19.0457C35.4942 19.2154 35.5762 19.3713 35.6967 19.4937C35.8171 19.6161 35.9705 19.6994 36.1376 19.7332C36.3046 19.7669 36.4777 19.7496 36.6351 19.6834C36.7924 19.6172 36.9269 19.505 37.0215 19.3611C37.1162 19.2172 37.1667 19.0481 37.1667 18.875C37.1667 18.6429 37.0759 18.4204 36.9145 18.2563C36.753 18.0922 36.5339 18 36.3056 18ZM32 44.25C33.3625 44.25 34.6944 43.8395 35.8273 43.0703C36.9601 42.3011 37.8431 41.2079 38.3645 39.9288C38.8859 38.6497 39.0223 37.2422 38.7565 35.8844C38.4907 34.5265 37.8346 33.2792 36.8712 32.3003C35.9078 31.3213 34.6803 30.6546 33.344 30.3845C32.0076 30.1144 30.6225 30.253 29.3637 30.7828C28.105 31.3127 27.0291 32.2099 26.2721 33.361C25.5151 34.5122 25.1111 35.8655 25.1111 37.25C25.1111 39.1065 25.8369 40.887 27.1288 42.1997C28.4207 43.5125 30.173 44.25 32 44.25ZM32 32C33.2186 32.0033 34.3968 32.4442 35.3265 33.2448C36.2562 34.0453 36.8775 35.1541 37.0806 36.375H36.3056C36.0772 36.375 35.8581 36.4672 35.6967 36.6313C35.5352 36.7954 35.4444 37.0179 35.4444 37.25C35.4444 37.4821 35.5352 37.7046 35.6967 37.8687C35.8581 38.0328 36.0772 38.125 36.3056 38.125H37.0806C36.9163 39.1125 36.4774 40.0317 35.8158 40.7741C35.1542 41.5165 34.2974 42.051 33.3465 42.3147C32.3957 42.5784 31.3904 42.5603 30.4494 42.2624C29.5083 41.9645 28.6708 41.3993 28.0356 40.6335C27.4004 39.8677 26.994 38.9332 26.8644 37.9404C26.7347 36.9475 26.8873 35.9377 27.3041 35.0301C27.7209 34.1225 28.3844 33.355 29.2165 32.8181C30.0485 32.2812 31.0144 31.9973 32 32Z"
-                                fill="black" />
-                        </svg>
-                        <p>BIG HOUSEHOLD APPLIANCES</p>
-                    </div>
-                    <div class="category">
-                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="carbon:game-console">
-                                <path id="Vector"
-                                    d="M15.0198 51.9996C14.0472 52.0008 13.0788 51.873 12.1398 51.6196C9.32158 50.8159 6.93064 48.9397 5.47991 46.3934C4.02917 43.8472 3.63422 40.8337 4.37978 37.9996L9.03978 20.3196C9.40269 18.8887 10.0479 17.5448 10.9374 16.3668C11.8269 15.1887 12.9429 14.2003 14.2198 13.4596C15.463 12.7395 16.8368 12.2732 18.2616 12.0879C19.6863 11.9025 21.1336 12.0016 22.5198 12.3796C23.9933 12.7888 25.3657 13.4996 26.55 14.467C27.7343 15.4345 28.7048 16.6374 29.3998 17.9996H34.5998C35.2928 16.636 36.2626 15.4318 37.4472 14.4642C38.6318 13.4965 40.0053 12.7865 41.4798 12.3796C42.8659 12.0016 44.3133 11.9025 45.738 12.0879C47.1627 12.2732 48.5365 12.7395 49.7798 13.4596C51.0504 14.1984 52.1623 15.1814 53.0513 16.3519C53.9404 17.5224 54.589 18.8573 54.9598 20.2796L59.6198 37.9996C60.3765 40.842 59.9847 43.8679 58.5289 46.4239C57.0732 48.9798 54.6705 50.8604 51.8398 51.6596C50.4536 52.0376 49.0063 52.1367 47.5816 51.9513C46.1568 51.7659 44.783 51.2997 43.5398 50.5796C42.267 49.8434 41.1535 48.8612 40.2642 47.6903C39.3749 46.5194 38.7275 45.1832 38.3598 43.7596L37.9998 41.9996H25.9998L25.5398 43.7196C25.1721 45.1432 24.5247 46.4794 23.6353 47.6503C22.746 48.8212 21.6325 49.8034 20.3598 50.5396C18.7347 51.4769 16.8956 51.9797 15.0198 51.9996ZM19.6598 15.9996C18.453 16.0046 17.268 16.3215 16.2198 16.9196C14.5775 17.8832 13.3837 19.458 12.8998 21.2996L8.23978 38.9796C7.75215 40.8011 7.99854 42.7412 8.92601 44.3829C9.85348 46.0247 11.388 47.2371 13.1998 47.7596C14.0748 47.9983 14.9884 48.0611 15.8879 47.9443C16.7873 47.8276 17.6547 47.5337 18.4398 47.0796C19.2572 46.6077 19.972 45.9771 20.5421 45.2249C21.1123 44.4727 21.5263 43.6141 21.7598 42.6996L22.9998 37.9996H40.9998L42.2198 42.6996C42.4574 43.6124 42.873 44.4692 43.4428 45.2208C44.0125 45.9725 44.7252 46.6042 45.5398 47.0796C46.3287 47.5333 47.1995 47.8268 48.102 47.9435C49.0046 48.0602 49.9214 47.9977 50.7998 47.7596C52.6137 47.242 54.1502 46.0294 55.0752 44.3854C56.0001 42.7414 56.239 40.7987 55.7398 38.9796L51.0798 21.2996C50.8476 20.3872 50.4363 19.5301 49.8697 18.7781C49.3032 18.0262 48.5928 17.3944 47.7798 16.9196C46.9908 16.4659 46.1201 16.1723 45.2175 16.0557C44.3149 15.939 43.3982 16.0015 42.5198 16.2396C41.4335 16.5492 40.4367 17.1136 39.6123 17.8858C38.7879 18.6581 38.1597 19.6158 37.7798 20.6796L37.2998 21.9996H26.6998L26.2198 20.6796C25.8365 19.6144 25.2047 18.656 24.3769 17.8838C23.549 17.1116 22.549 16.548 21.4598 16.2396C20.8727 16.0818 20.2677 16.0011 19.6598 15.9996Z"
-                                    fill="black" />
-                                <path id="Vector_2"
-                                    d="M20 32C19.2089 32 18.4355 31.7654 17.7777 31.3259C17.1199 30.8864 16.6072 30.2616 16.3045 29.5307C16.0017 28.7998 15.9225 27.9956 16.0769 27.2196C16.2312 26.4437 16.6122 25.731 17.1716 25.1716C17.731 24.6122 18.4437 24.2312 19.2196 24.0769C19.9956 23.9225 20.7998 24.0017 21.5307 24.3045C22.2616 24.6072 22.8864 25.1199 23.3259 25.7777C23.7654 26.4355 24 27.2089 24 28C24 29.0609 23.5786 30.0783 22.8284 30.8284C22.0783 31.5786 21.0609 32 20 32Z"
-                                    fill="black" />
-                                <path id="Vector_3"
-                                    d="M44 26C45.1046 26 46 25.1046 46 24C46 22.8954 45.1046 22 44 22C42.8954 22 42 22.8954 42 24C42 25.1046 42.8954 26 44 26Z"
-                                    fill="black" />
-                                <path id="Vector_4"
-                                    d="M44 34C45.1046 34 46 33.1046 46 32C46 30.8954 45.1046 30 44 30C42.8954 30 42 30.8954 42 32C42 33.1046 42.8954 34 44 34Z"
-                                    fill="black" />
-                                <path id="Vector_5"
-                                    d="M40 30C41.1046 30 42 29.1046 42 28C42 26.8954 41.1046 26 40 26C38.8954 26 38 26.8954 38 28C38 29.1046 38.8954 30 40 30Z"
-                                    fill="black" />
-                                <path id="Vector_6"
-                                    d="M48 30C49.1046 30 50 29.1046 50 28C50 26.8954 49.1046 26 48 26C46.8954 26 46 26.8954 46 28C46 29.1046 46.8954 30 48 30Z"
-                                    fill="black" />
-                            </g>
-                        </svg>
-
-                        <p>GAMING</p>
-                    </div>
-                    <div class="category">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
-                            <path
-                                d="M24.5 53.3337V48.0003H12.8093C11.5809 48.0003 10.556 47.5897 9.73467 46.7683C8.91333 45.947 8.50178 44.9212 8.5 43.691V14.9763C8.5 13.7479 8.91156 12.723 9.73467 11.9017C10.5578 11.0803 11.5818 10.6688 12.8067 10.667H52.1933C53.42 10.667 54.444 11.0785 55.2653 11.9017C56.0867 12.7248 56.4982 13.7497 56.5 14.9763V43.6937C56.5 44.9203 56.0884 45.9452 55.2653 46.7683C54.4422 47.5914 53.4182 48.0021 52.1933 48.0003H40.5V53.3337H24.5ZM12.8093 45.3337H52.1933C52.6022 45.3337 52.9782 45.163 53.3213 44.8217C53.6644 44.4803 53.8351 44.1034 53.8333 43.691V14.9763C53.8333 14.5657 53.6627 14.1888 53.3213 13.8457C52.98 13.5025 52.604 13.3319 52.1933 13.3337H12.8067C12.3978 13.3337 12.0218 13.5043 11.6787 13.8457C11.3356 14.187 11.1649 14.5639 11.1667 14.9763V43.6937C11.1667 44.1026 11.3373 44.4785 11.6787 44.8217C12.02 45.1648 12.396 45.3354 12.8067 45.3337"
-                                fill="black" />
-                        </svg>
-                        <p>TV, VIDEO,
-                            HOME-CINEMA</p>
-                    </div>
-                    <div class="category">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-                            <path
-                                d="M20.8213 56.0002C20.0728 56.0002 19.4408 55.7424 18.9253 55.2269C18.4097 54.7131 18.152 54.082 18.152 53.3335V50.6669C18.152 48.8855 18.5911 47.2002 19.4693 45.6109C20.3475 44.0215 21.6222 42.6953 23.2933 41.6322L21.2666 28.5122H17.0266C15.8 28.5122 14.7751 28.1015 13.952 27.2802C13.1288 26.4589 12.7173 25.434 12.7173 24.2055V14.9762C12.7173 13.7815 13.1368 12.7647 13.976 11.9255C14.8168 11.0864 15.8337 10.6669 17.0266 10.6669H26.6666C26.7804 10.178 27.016 9.71399 27.3733 9.27488C27.7288 8.83577 28.1768 8.61621 28.7173 8.61621H35.2826C35.8231 8.61621 36.272 8.83577 36.6293 9.27488C36.9848 9.71399 37.2195 10.178 37.3333 10.6669H42.9546C43.6177 10.6669 44.1671 10.9184 44.6026 11.4215C45.0382 11.9247 45.2071 12.5069 45.1093 13.1682L40.7093 41.6322C42.3804 42.6953 43.6542 44.0215 44.5306 45.6109C45.4071 47.2002 45.8453 48.8855 45.8453 50.6669V53.3335C45.8453 54.082 45.5884 54.7131 45.0746 55.2269C44.5591 55.7424 43.928 56.0002 43.1813 56.0002H20.8213ZM20.8746 25.8455L18.92 13.3335H17.0266C16.6177 13.3335 16.2417 13.5042 15.8986 13.8455C15.5555 14.1869 15.3848 14.5629 15.3866 14.9735V24.2055C15.3866 24.6144 15.5573 24.9904 15.8986 25.3335C16.24 25.6767 16.616 25.8473 17.0266 25.8455H20.8746ZM32 50.0535C32.5848 50.0535 33.0728 49.858 33.464 49.4669C33.8551 49.0758 34.0506 48.5878 34.0506 48.0029C34.0506 47.418 33.8551 46.93 33.464 46.5389C33.0728 46.1478 32.5848 45.9522 32 45.9522C31.4151 45.9522 30.9271 46.1478 30.536 46.5389C30.1448 46.93 29.9493 47.418 29.9493 48.0029C29.9493 48.5878 30.1448 49.0758 30.536 49.4669C30.9271 49.858 31.4151 50.0535 32 50.0535ZM25.7653 40.0002H38.2373L42.3466 13.3335H21.6506L25.7653 40.0002ZM20.8213 53.3335H43.1786V50.6669C43.1786 48.4447 42.4008 46.5558 40.8453 45.0002C39.2897 43.4447 37.4008 42.6669 35.1786 42.6669H28.8213C26.5991 42.6669 24.7102 43.4447 23.1546 45.0002C21.5991 46.5558 20.8213 48.4447 20.8213 50.6669V53.3335Z"
-                                fill="black" />
-                        </svg>
-                        <p>SMALL HOUSEHOLD APPLIANCES</p>
-                    </div>
-                </div>
-
-            </section>
-            <!--SECTION 4                         -->
-            <section class="Section4">
-                <div class="Section2-title">
-                    <h2>Offers</h2>
-                </div>
-                <div id="products-container" class="products section4-products"></div>
-
-            </section>
-            <!--SECTION 5                         -->
-            <section class="Section5 Section3 ">
-                <div class="Section2-title">
-                    <h2>our Marque</h2>
-                </div>
-                <div class="categorys" id="section-5-categorys">
-                </div>
-            </section>
-            <!--SECTION 6                         -->
-            <section class="Section6 Section3 ">
-                <div class="Section2-title">
-                    <h2>our Services</h2>
-                </div>
-                <div class="categorys" id="section-6-categorys">
-                </div>
-            </section>
-            <!--FOOTER                            -->
-            <footer>
-                <div class="footer-container">
-                    <div class="footer-section">
-                        <div class="footer-logo">
-                            <img src="images/footer-logo.png" alt="">
-                            <h3>Electrosouss</h3>
-                        </div>
-                        <ul>
-                            <li><a href="#">Who Are We?</a></li>
-                            <li><a href="#">General Conditions Of Sale</a></li>
-                            <li><a href="#">Legal Information</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Our Services</h3>
-                        <ul>
-                            <li><a href="#">After Sales Service</a></li>
-                            <li><a href="#">Payment Method</a></li>
-                            <li><a href="#">Delivery & Installation</a></li>
-                            <li><a href="#">Product Warranty</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Need Help?</h3>
-                        <ul>
-                            <li><a href="#">Our Stores?</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Frequently Asked Questions (FAQ)</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section newsletter">
-                        <h3>Newsletter</h3>
-                        <p>SUBSCRIPTION TO THE NEWSLETTER</p>
-                        <form>
-                            <input type="email" placeholder="E-mail..." required>
-                            <button type="submit">Subscribe</button>
-                        </form>
-                        <p>Suivez-nous sur les réseaux sociaux</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="back-to-top">
-                    <a href="#"><i class="fas fa-arrow-up"></i></a>
-                </div>
-            </footer>
-
-        </div>
-
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script>
-            // تهيئة Swiper
-            const swiper = new Swiper('.swiper', {
-                loop: true, // التمرير بشكل دائري
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true, // جعل النقاط قابلة للنقر
-                },
-                autoplay: {
-                    delay: 3200, // التمرير التلقائي كل 3 ثوانٍ
-                    disableOnInteraction: false, // استمرار التمرير التلقائي بعد التفاعل
-                },
-            });
-        </script>
-        <script src="javaScript/Section1.js"></script>
-        <script src="javaScript/Section4.js"></script>
-        <script src="javaScript/Section5.js"></script>
-        <script src="javaScript/Section6.js"></script>
-        <script src="javaScript/Loading.js"></script>
-    </body>
-
-    =======
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Electrosouss</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="Styles/Header.css">
-        <link rel="stylesheet" href="Styles/Section1.css">
-        <link rel="stylesheet" href="Styles/Section2.css">
-        <link rel="stylesheet" href="Styles/Section3.css">
-        <link rel="stylesheet" href="Styles/Section4.css">
-        <link rel="stylesheet" href="Styles/Section5.css">
-        <link rel="stylesheet" href="Styles/Section6.css">
-        <link rel="stylesheet" href="Styles/Footer.css">
-    </head>
-
-    <body>
-        <div id="loader">
-            <span>Loading...</span>
-        </div>
-        <!--HEADER                            -->
-        <div id="content">
-            <header>
-                <div class="show-sidebar-for-mobile">
-                    <button onclick="showSidebar()"><i class="fa-solid fa-bars"></i></button>
-                </div>
-                <div class="logo">
-                    <a href="index.html">
-                        <img class="logo-for-pc" src="images/logo.png" alt="Logo">
-                        <img class="logo-for-mobile" src="images/logo-for-mobile.png" alt="Logo"></a>
-                </div>
-
-                <div class="header-right">
-                    <div class="search-bar ">
-                        <input type="text" placeholder="What are you looking for?">
-                        <i class="fas fa-search"></i>
-                    </div>
-
-                    <div class="icons heart">
-                        <a href="#"><i class="far fa-heart"></i></a>
-                        <a href="#"><i class="far fa-user"></i></a>
-                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                        <div class="dropdown">
-                            <span>En</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom-div">
-                    <div class="res-categorys-button">
-                        <button onclick="showSidebar()"><i class="fa-solid fa-bars"></i>Categorys</button>
-                    </div>
-                    <div class="search-bar resposive-search-bar ">
-                        <input type="text" placeholder="What are you looking for?">
-                        <i class="fas fa-search"></i>
-                    </div>
-                </div>
-
-            </header>
-            <!--SECTION 1                         -->
-            <section class="Seciton1">
-                <div class="sidebar ">
+                <div class="footer-section">
+                    <h3>Our Services</h3>
                     <ul>
-                        <li class="li-link">Big Household Appliances <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Small Household Appliances <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Phone, Tablet & Smart Watch <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Beauty & Well-Being Audio & HiFi <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Informatique <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Home Comfort <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Laundry Care <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Freezer <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Gaming <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Cooking Plate <i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Extractor Hood <i class="fa-solid fa-chevron-right"></i></li>
+                        <li><a href="#">After Sales Service</a></li>
+                        <li><a href="#">Payment Method</a></li>
+                        <li><a href="#">Delivery & Installation</a></li>
+                        <li><a href="#">Product Warranty</a></li>
                     </ul>
                 </div>
+                <div class="footer-section">
+                    <h3>Need Help?</h3>
+                    <ul>
+                        <li><a href="#">Our Stores?</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Frequently Asked Questions (FAQ)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h3>Newsletter</h3>
+                    <p>SUBSCRIPTION TO THE NEWSLETTER</p>
+                    <form>
+                        <input type="email" placeholder="E-mail..." required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <p>Suivez-nous sur les réseaux sociaux</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="back-to-top">
+                <a href="#"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </footer>
+    </div>
 
-                <div class="main-cotent">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="images/Section1-img-1.png" alt="Image 1">
-                            </div>
-                            <div class="swiper-slide"><img src="images/Section1-img-2.png" alt="Image 2">
-                            </div>
-                            <div class="swiper-slide"><img src="images/Section1-img-3.png" alt="Image 3">
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // تهيئة Swiper
+        const swiper = new Swiper('.swiper', {
+            loop: true, // التمرير بشكل دائري
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true, // جعل النقاط قابلة للنقر
+            },
+            autoplay: {
+                delay: 3200, // التمرير التلقائي كل 3 ثوانٍ
+                disableOnInteraction: false, // استمرار التمرير التلقائي بعد التفاعل
+            },
+        });
+    </script>
+    <script src="javaScript/Section1.js"></script>
+    <script src="javaScript/Section4.js"></script>
+    <script src="javaScript/Section5.js"></script>
+    <script src="javaScript/Section6.js"></script>
+    <script src="javaScript/Loading.js"></script>
+</body>
 
-            </section>
-            <!--SECTION 2                         -->
-            <section class="Section2">
-                <div class="Section2-title">
-                    <h2>Offers</h2>
-                </div>
-                <div class="products">
-                    <div class="product-card">
-                        <img src="images/Section2-product-img-1.png" alt="Product Image">
-                        <div class="product-details">
-                            <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
-                            <div class="product-price">
-                                <div>
-                                    5.499,00 DH <span class="old-price">8.799,00 DH</span>
-                                </div>
-                                <div class="heart">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="reviews">(56)</span>
-                            </div>
-                            <button class="add-to-cart">Add To Card</button>
-                        </div>
-                    </div>
-                    <div class="product-card display-none">
-                        <img src="images/Section2-product-img-4.png" alt="Product Image">
-                        <div class="product-details">
-                            <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
-                            <div class="product-price">
-                                <div>
-                                    5.499,00 DH <span class="old-price">8.799,00 DH</span>
-                                </div>
-                                <div class="heart">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="reviews">(56)</span>
-                            </div>
-                            <button class="add-to-cart">Add To Card</button>
-                        </div>
-                    </div>
-                    <div class="product-card display-none">
-                        <img src="images/Section2-product-img-2.png" alt="Product Image">
-                        <div class="product-details">
-                            <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
-                            <div class="product-price">
-                                <div>
-                                    5.499,00 DH <span class="old-price">8.799,00 DH</span>
-                                </div>
-                                <div class="heart">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="reviews">(56)</span>
-                            </div>
-                            <button class="add-to-cart">Add To Card</button>
-                        </div>
-                    </div>
-                    <div class="product-card display-none">
-                        <img src="images/Section2-product-img-3.png" alt="Product Image">
-                        <div class="product-details">
-                            <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
-                            <div class="product-price">
-                                <div>
-                                    5.499,00 DH <span class="old-price">8.799,00 DH</span>
-                                </div>
-                                <div class="heart">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="reviews">(56)</span>
-                            </div>
-                            <button class="add-to-cart">Add To Card</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/Section2-product-img-2.png" alt="Product Image">
-                        <div class="product-details">
-                            <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
-                            <div class="product-price">
-                                <div>
-                                    5.499,00 DH <span class="old-price">8.799,00 DH</span>
-                                </div>
-                                <div class="heart">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="reviews">(56)</span>
-                            </div>
-                            <button class="add-to-cart">Add To Card</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/Section2-product-img-3.png" alt="Product Image">
-                        <div class="product-details">
-                            <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
-                            <div class="product-price">
-                                <div>
-                                    5.499,00 DH <span class="old-price">8.799,00 DH</span>
-                                </div>
-                                <div class="heart">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="reviews">(56)</span>
-                            </div>
-                            <button class="add-to-cart">Add To Card</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/Section2-product-img-4.png" alt="Product Image">
-                        <div class="product-details">
-                            <div class="product-title">MACHINE A LAVER SAMSUNG 9KG ECO BUBBLE INOX</div>
-                            <div class="product-price">
-                                <div>
-                                    5.499,00 DH <span class="old-price">8.799,00 DH</span>
-                                </div>
-                                <div class="heart">
-                                    <i class="fa-regular fa-heart"></i>
-                                </div>
-                            </div>
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span class="reviews">(56)</span>
-                            </div>
-                            <button class="add-to-cart">Add To Card</button>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-            <!--SECTION 3                         -->
-            <section class="Section3">
-                <div class="Section2-title">
-                    <h2>category</h2>
-                </div>
-                <div class="categorys">
-                    <div class="category">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-                            <path
-                                d="M28.8 44.8004C28.3757 44.8004 27.9687 44.969 27.6686 45.269C27.3686 45.5691 27.2 45.976 27.2 46.4004C27.2 46.8247 27.3686 47.2317 27.6686 47.5318C27.9687 47.8318 28.3757 48.0004 28.8 48.0004H35.2C35.6243 48.0004 36.0313 47.8318 36.3314 47.5318C36.6314 47.2317 36.8 46.8247 36.8 46.4004C36.8 45.976 36.6314 45.5691 36.3314 45.269C36.0313 44.969 35.6243 44.8004 35.2 44.8004H28.8ZM22.4 6.40039C20.7026 6.40039 19.0747 7.07467 17.8745 8.27491C16.6743 9.47514 16 11.103 16 12.8004V51.2004C16 52.8978 16.6743 54.5256 17.8745 55.7259C19.0747 56.9261 20.7026 57.6004 22.4 57.6004H41.6C43.2974 57.6004 44.9252 56.9261 46.1255 55.7259C47.3257 54.5256 48 52.8978 48 51.2004V12.8004C48 11.103 47.3257 9.47514 46.1255 8.27491C44.9252 7.07467 43.2974 6.40039 41.6 6.40039H22.4ZM19.2 12.8004C19.2 11.9517 19.5371 11.1378 20.1373 10.5376C20.7374 9.93753 21.5513 9.60039 22.4 9.60039H41.6C42.4487 9.60039 43.2626 9.93753 43.8627 10.5376C44.4629 11.1378 44.8 11.9517 44.8 12.8004V51.2004C44.8 52.0491 44.4629 52.863 43.8627 53.4631C43.2626 54.0633 42.4487 54.4004 41.6 54.4004H22.4C21.5513 54.4004 20.7374 54.0633 20.1373 53.4631C19.5371 52.863 19.2 52.0491 19.2 51.2004V12.8004Z"
-                                fill="black" />
-                        </svg>
-                        <p>PHONE, TABLET AND SMART WATCh</p>
-                    </div>
-                    <div class="category">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
-                            <path
-                                d="M38.8889 48.625C38.8889 48.8571 38.9796 49.0796 39.1411 49.2437C39.3026 49.4078 39.5216 49.5 39.75 49.5H43.1944C43.4228 49.5 43.6419 49.4078 43.8033 49.2437C43.9648 49.0796 44.0556 48.8571 44.0556 48.625C44.0556 48.3929 43.9648 48.1704 43.8033 48.0063C43.6419 47.8422 43.4228 47.75 43.1944 47.75H39.75C39.5216 47.75 39.3026 47.8422 39.1411 48.0063C38.9796 48.1704 38.8889 48.3929 38.8889 48.625ZM41.4722 14.5C40.9613 14.5 40.4618 14.654 40.037 14.9424C39.6122 15.2308 39.2811 15.6408 39.0855 16.1205C38.89 16.6001 38.8388 17.1279 38.9385 17.6371C39.0382 18.1463 39.2842 18.614 39.6455 18.9812C40.0068 19.3483 40.4671 19.5983 40.9682 19.6996C41.4694 19.8008 41.9888 19.7489 42.4608 19.5502C42.9329 19.3515 43.3363 19.0151 43.6202 18.5834C43.904 18.1517 44.0556 17.6442 44.0556 17.125C44.0556 16.4288 43.7834 15.7611 43.2989 15.2688C42.8144 14.7766 42.1574 14.5 41.4722 14.5ZM41.4722 18C41.3019 18 41.1354 17.9487 40.9938 17.8525C40.8522 17.7564 40.7418 17.6197 40.6767 17.4598C40.6115 17.3 40.5944 17.124 40.6277 16.9543C40.6609 16.7846 40.7429 16.6287 40.8633 16.5063C40.9838 16.3839 41.1372 16.3006 41.3042 16.2668C41.4713 16.2331 41.6444 16.2504 41.8018 16.3166C41.9591 16.3828 42.0936 16.495 42.1882 16.6389C42.2828 16.7828 42.3333 16.9519 42.3333 17.125C42.3333 17.3571 42.2426 17.5796 42.0811 17.7437C41.9196 17.9078 41.7006 18 41.4722 18ZM32 47.75C34.0437 47.75 36.0416 47.1342 37.7409 45.9804C39.4402 44.8267 40.7647 43.1868 41.5468 41.2682C42.3289 39.3496 42.5335 37.2384 42.1348 35.2016C41.7361 33.1648 40.7519 31.2938 39.3068 29.8254C37.8616 28.3569 36.0204 27.3569 34.0159 26.9518C32.0115 26.5466 29.9338 26.7545 28.0456 27.5493C26.1574 28.344 24.5436 29.6898 23.4081 31.4165C22.2727 33.1432 21.6667 35.1733 21.6667 37.25C21.6667 40.0348 22.7554 42.7055 24.6932 44.6746C26.6311 46.6438 29.2594 47.75 32 47.75ZM32 28.5C33.7031 28.5 35.368 29.0132 36.7841 29.9746C38.2002 30.9361 39.3039 32.3027 39.9556 33.9015C40.6074 35.5004 40.7779 37.2597 40.4457 38.957C40.1134 40.6544 39.2933 42.2135 38.089 43.4372C36.8847 44.6609 35.3503 45.4943 33.6799 45.8319C32.0096 46.1695 30.2781 45.9962 28.7047 45.334C27.1312 44.6717 25.7863 43.5502 24.8401 42.1112C23.8939 40.6723 23.3889 38.9806 23.3889 37.25C23.3889 34.9294 24.2961 32.7038 25.911 31.0628C27.5259 29.4219 29.7162 28.5 32 28.5ZM43.1944 11H20.8056C19.6637 11 18.5685 11.4609 17.7611 12.2814C16.9536 13.1019 16.5 14.2147 16.5 15.375V48.625C16.5 49.1995 16.6114 49.7684 16.8277 50.2992C17.0441 50.83 17.3613 51.3123 17.7611 51.7186C18.1609 52.1248 18.6355 52.4471 19.1579 52.667C19.6803 52.8868 20.2401 53 20.8056 53H43.1944C43.7599 53 44.3197 52.8868 44.8421 52.667C45.3645 52.4471 45.8391 52.1248 46.2389 51.7186C46.6387 51.3123 46.9559 50.83 47.1723 50.2992C47.3886 49.7684 47.5 49.1995 47.5 48.625V15.375C47.5 14.2147 47.0464 13.1019 46.2389 12.2814C45.4315 11.4609 44.3363 11 43.1944 11ZM21.6667 12.75H30.2778V17.125C30.2778 17.3571 30.1871 17.5796 30.0256 17.7437C29.8641 17.9078 29.645 18 29.4167 18H22.5278C22.2994 18 22.0804 17.9078 21.9189 17.7437C21.7574 17.5796 21.6667 17.3571 21.6667 17.125V12.75ZM45.7778 48.625C45.7778 49.3212 45.5056 49.9889 45.0211 50.4812C44.5367 50.9734 43.8796 51.25 43.1944 51.25H20.8056C20.1204 51.25 19.4633 50.9734 18.9789 50.4812C18.4944 49.9889 18.2222 49.3212 18.2222 48.625V23.25H45.7778V48.625ZM45.7778 21.5H18.2222V15.375C18.2237 14.8334 18.39 14.3056 18.6984 13.8638C19.0067 13.4221 19.4419 13.088 19.9444 12.9075V17.125C19.9444 17.8212 20.2166 18.4889 20.7011 18.9812C21.1856 19.4734 21.8426 19.75 22.5278 19.75H29.4167C30.1018 19.75 30.7589 19.4734 31.2434 18.9812C31.7278 18.4889 32 17.8212 32 17.125V12.75H43.1944C43.8796 12.75 44.5367 13.0266 45.0211 13.5188C45.5056 14.0111 45.7778 14.6788 45.7778 15.375V21.5ZM36.3056 18C36.1352 18 35.9688 18.0513 35.8271 18.1475C35.6855 18.2436 35.5752 18.3803 35.51 18.5402C35.4448 18.7 35.4278 18.876 35.461 19.0457C35.4942 19.2154 35.5762 19.3713 35.6967 19.4937C35.8171 19.6161 35.9705 19.6994 36.1376 19.7332C36.3046 19.7669 36.4777 19.7496 36.6351 19.6834C36.7924 19.6172 36.9269 19.505 37.0215 19.3611C37.1162 19.2172 37.1667 19.0481 37.1667 18.875C37.1667 18.6429 37.0759 18.4204 36.9145 18.2563C36.753 18.0922 36.5339 18 36.3056 18ZM32 44.25C33.3625 44.25 34.6944 43.8395 35.8273 43.0703C36.9601 42.3011 37.8431 41.2079 38.3645 39.9288C38.8859 38.6497 39.0223 37.2422 38.7565 35.8844C38.4907 34.5265 37.8346 33.2792 36.8712 32.3003C35.9078 31.3213 34.6803 30.6546 33.344 30.3845C32.0076 30.1144 30.6225 30.253 29.3637 30.7828C28.105 31.3127 27.0291 32.2099 26.2721 33.361C25.5151 34.5122 25.1111 35.8655 25.1111 37.25C25.1111 39.1065 25.8369 40.887 27.1288 42.1997C28.4207 43.5125 30.173 44.25 32 44.25ZM32 32C33.2186 32.0033 34.3968 32.4442 35.3265 33.2448C36.2562 34.0453 36.8775 35.1541 37.0806 36.375H36.3056C36.0772 36.375 35.8581 36.4672 35.6967 36.6313C35.5352 36.7954 35.4444 37.0179 35.4444 37.25C35.4444 37.4821 35.5352 37.7046 35.6967 37.8687C35.8581 38.0328 36.0772 38.125 36.3056 38.125H37.0806C36.9163 39.1125 36.4774 40.0317 35.8158 40.7741C35.1542 41.5165 34.2974 42.051 33.3465 42.3147C32.3957 42.5784 31.3904 42.5603 30.4494 42.2624C29.5083 41.9645 28.6708 41.3993 28.0356 40.6335C27.4004 39.8677 26.994 38.9332 26.8644 37.9404C26.7347 36.9475 26.8873 35.9377 27.3041 35.0301C27.7209 34.1225 28.3844 33.355 29.2165 32.8181C30.0485 32.2812 31.0144 31.9973 32 32Z"
-                                fill="black" />
-                        </svg>
-                        <p>BIG HOUSEHOLD APPLIANCES</p>
-                    </div>
-                    <div class="category">
-                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="carbon:game-console">
-                                <path id="Vector"
-                                    d="M15.0198 51.9996C14.0472 52.0008 13.0788 51.873 12.1398 51.6196C9.32158 50.8159 6.93064 48.9397 5.47991 46.3934C4.02917 43.8472 3.63422 40.8337 4.37978 37.9996L9.03978 20.3196C9.40269 18.8887 10.0479 17.5448 10.9374 16.3668C11.8269 15.1887 12.9429 14.2003 14.2198 13.4596C15.463 12.7395 16.8368 12.2732 18.2616 12.0879C19.6863 11.9025 21.1336 12.0016 22.5198 12.3796C23.9933 12.7888 25.3657 13.4996 26.55 14.467C27.7343 15.4345 28.7048 16.6374 29.3998 17.9996H34.5998C35.2928 16.636 36.2626 15.4318 37.4472 14.4642C38.6318 13.4965 40.0053 12.7865 41.4798 12.3796C42.8659 12.0016 44.3133 11.9025 45.738 12.0879C47.1627 12.2732 48.5365 12.7395 49.7798 13.4596C51.0504 14.1984 52.1623 15.1814 53.0513 16.3519C53.9404 17.5224 54.589 18.8573 54.9598 20.2796L59.6198 37.9996C60.3765 40.842 59.9847 43.8679 58.5289 46.4239C57.0732 48.9798 54.6705 50.8604 51.8398 51.6596C50.4536 52.0376 49.0063 52.1367 47.5816 51.9513C46.1568 51.7659 44.783 51.2997 43.5398 50.5796C42.267 49.8434 41.1535 48.8612 40.2642 47.6903C39.3749 46.5194 38.7275 45.1832 38.3598 43.7596L37.9998 41.9996H25.9998L25.5398 43.7196C25.1721 45.1432 24.5247 46.4794 23.6353 47.6503C22.746 48.8212 21.6325 49.8034 20.3598 50.5396C18.7347 51.4769 16.8956 51.9797 15.0198 51.9996ZM19.6598 15.9996C18.453 16.0046 17.268 16.3215 16.2198 16.9196C14.5775 17.8832 13.3837 19.458 12.8998 21.2996L8.23978 38.9796C7.75215 40.8011 7.99854 42.7412 8.92601 44.3829C9.85348 46.0247 11.388 47.2371 13.1998 47.7596C14.0748 47.9983 14.9884 48.0611 15.8879 47.9443C16.7873 47.8276 17.6547 47.5337 18.4398 47.0796C19.2572 46.6077 19.972 45.9771 20.5421 45.2249C21.1123 44.4727 21.5263 43.6141 21.7598 42.6996L22.9998 37.9996H40.9998L42.2198 42.6996C42.4574 43.6124 42.873 44.4692 43.4428 45.2208C44.0125 45.9725 44.7252 46.6042 45.5398 47.0796C46.3287 47.5333 47.1995 47.8268 48.102 47.9435C49.0046 48.0602 49.9214 47.9977 50.7998 47.7596C52.6137 47.242 54.1502 46.0294 55.0752 44.3854C56.0001 42.7414 56.239 40.7987 55.7398 38.9796L51.0798 21.2996C50.8476 20.3872 50.4363 19.5301 49.8697 18.7781C49.3032 18.0262 48.5928 17.3944 47.7798 16.9196C46.9908 16.4659 46.1201 16.1723 45.2175 16.0557C44.3149 15.939 43.3982 16.0015 42.5198 16.2396C41.4335 16.5492 40.4367 17.1136 39.6123 17.8858C38.7879 18.6581 38.1597 19.6158 37.7798 20.6796L37.2998 21.9996H26.6998L26.2198 20.6796C25.8365 19.6144 25.2047 18.656 24.3769 17.8838C23.549 17.1116 22.549 16.548 21.4598 16.2396C20.8727 16.0818 20.2677 16.0011 19.6598 15.9996Z"
-                                    fill="black" />
-                                <path id="Vector_2"
-                                    d="M20 32C19.2089 32 18.4355 31.7654 17.7777 31.3259C17.1199 30.8864 16.6072 30.2616 16.3045 29.5307C16.0017 28.7998 15.9225 27.9956 16.0769 27.2196C16.2312 26.4437 16.6122 25.731 17.1716 25.1716C17.731 24.6122 18.4437 24.2312 19.2196 24.0769C19.9956 23.9225 20.7998 24.0017 21.5307 24.3045C22.2616 24.6072 22.8864 25.1199 23.3259 25.7777C23.7654 26.4355 24 27.2089 24 28C24 29.0609 23.5786 30.0783 22.8284 30.8284C22.0783 31.5786 21.0609 32 20 32Z"
-                                    fill="black" />
-                                <path id="Vector_3"
-                                    d="M44 26C45.1046 26 46 25.1046 46 24C46 22.8954 45.1046 22 44 22C42.8954 22 42 22.8954 42 24C42 25.1046 42.8954 26 44 26Z"
-                                    fill="black" />
-                                <path id="Vector_4"
-                                    d="M44 34C45.1046 34 46 33.1046 46 32C46 30.8954 45.1046 30 44 30C42.8954 30 42 30.8954 42 32C42 33.1046 42.8954 34 44 34Z"
-                                    fill="black" />
-                                <path id="Vector_5"
-                                    d="M40 30C41.1046 30 42 29.1046 42 28C42 26.8954 41.1046 26 40 26C38.8954 26 38 26.8954 38 28C38 29.1046 38.8954 30 40 30Z"
-                                    fill="black" />
-                                <path id="Vector_6"
-                                    d="M48 30C49.1046 30 50 29.1046 50 28C50 26.8954 49.1046 26 48 26C46.8954 26 46 26.8954 46 28C46 29.1046 46.8954 30 48 30Z"
-                                    fill="black" />
-                            </g>
-                        </svg>
-
-                        <p>GAMING</p>
-                    </div>
-                    <div class="category">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
-                            <path
-                                d="M24.5 53.3337V48.0003H12.8093C11.5809 48.0003 10.556 47.5897 9.73467 46.7683C8.91333 45.947 8.50178 44.9212 8.5 43.691V14.9763C8.5 13.7479 8.91156 12.723 9.73467 11.9017C10.5578 11.0803 11.5818 10.6688 12.8067 10.667H52.1933C53.42 10.667 54.444 11.0785 55.2653 11.9017C56.0867 12.7248 56.4982 13.7497 56.5 14.9763V43.6937C56.5 44.9203 56.0884 45.9452 55.2653 46.7683C54.4422 47.5914 53.4182 48.0021 52.1933 48.0003H40.5V53.3337H24.5ZM12.8093 45.3337H52.1933C52.6022 45.3337 52.9782 45.163 53.3213 44.8217C53.6644 44.4803 53.8351 44.1034 53.8333 43.691V14.9763C53.8333 14.5657 53.6627 14.1888 53.3213 13.8457C52.98 13.5025 52.604 13.3319 52.1933 13.3337H12.8067C12.3978 13.3337 12.0218 13.5043 11.6787 13.8457C11.3356 14.187 11.1649 14.5639 11.1667 14.9763V43.6937C11.1667 44.1026 11.3373 44.4785 11.6787 44.8217C12.02 45.1648 12.396 45.3354 12.8067 45.3337"
-                                fill="black" />
-                        </svg>
-                        <p>TV, VIDEO,
-                            HOME-CINEMA</p>
-                    </div>
-                    <div class="category">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
-                            <path
-                                d="M20.8213 56.0002C20.0728 56.0002 19.4408 55.7424 18.9253 55.2269C18.4097 54.7131 18.152 54.082 18.152 53.3335V50.6669C18.152 48.8855 18.5911 47.2002 19.4693 45.6109C20.3475 44.0215 21.6222 42.6953 23.2933 41.6322L21.2666 28.5122H17.0266C15.8 28.5122 14.7751 28.1015 13.952 27.2802C13.1288 26.4589 12.7173 25.434 12.7173 24.2055V14.9762C12.7173 13.7815 13.1368 12.7647 13.976 11.9255C14.8168 11.0864 15.8337 10.6669 17.0266 10.6669H26.6666C26.7804 10.178 27.016 9.71399 27.3733 9.27488C27.7288 8.83577 28.1768 8.61621 28.7173 8.61621H35.2826C35.8231 8.61621 36.272 8.83577 36.6293 9.27488C36.9848 9.71399 37.2195 10.178 37.3333 10.6669H42.9546C43.6177 10.6669 44.1671 10.9184 44.6026 11.4215C45.0382 11.9247 45.2071 12.5069 45.1093 13.1682L40.7093 41.6322C42.3804 42.6953 43.6542 44.0215 44.5306 45.6109C45.4071 47.2002 45.8453 48.8855 45.8453 50.6669V53.3335C45.8453 54.082 45.5884 54.7131 45.0746 55.2269C44.5591 55.7424 43.928 56.0002 43.1813 56.0002H20.8213ZM20.8746 25.8455L18.92 13.3335H17.0266C16.6177 13.3335 16.2417 13.5042 15.8986 13.8455C15.5555 14.1869 15.3848 14.5629 15.3866 14.9735V24.2055C15.3866 24.6144 15.5573 24.9904 15.8986 25.3335C16.24 25.6767 16.616 25.8473 17.0266 25.8455H20.8746ZM32 50.0535C32.5848 50.0535 33.0728 49.858 33.464 49.4669C33.8551 49.0758 34.0506 48.5878 34.0506 48.0029C34.0506 47.418 33.8551 46.93 33.464 46.5389C33.0728 46.1478 32.5848 45.9522 32 45.9522C31.4151 45.9522 30.9271 46.1478 30.536 46.5389C30.1448 46.93 29.9493 47.418 29.9493 48.0029C29.9493 48.5878 30.1448 49.0758 30.536 49.4669C30.9271 49.858 31.4151 50.0535 32 50.0535ZM25.7653 40.0002H38.2373L42.3466 13.3335H21.6506L25.7653 40.0002ZM20.8213 53.3335H43.1786V50.6669C43.1786 48.4447 42.4008 46.5558 40.8453 45.0002C39.2897 43.4447 37.4008 42.6669 35.1786 42.6669H28.8213C26.5991 42.6669 24.7102 43.4447 23.1546 45.0002C21.5991 46.5558 20.8213 48.4447 20.8213 50.6669V53.3335Z"
-                                fill="black" />
-                        </svg>
-                        <p>SMALL HOUSEHOLD APPLIANCES</p>
-                    </div>
-                </div>
-
-            </section>
-            <!--SECTION 4                         -->
-            <section class="Section4">
-                <div class="Section2-title">
-                    <h2>Offers</h2>
-                </div>
-                <div id="products-container" class="products section4-products"></div>
-
-            </section>
-            <!--SECTION 5                         -->
-            <section class="Section5 Section3 ">
-                <div class="Section2-title">
-                    <h2>our Marque</h2>
-                </div>
-                <div class="categorys" id="section-5-categorys">
-                </div>
-            </section>
-            <!--SECTION 6                         -->
-            <section class="Section6 Section3 ">
-                <div class="Section2-title">
-                    <h2>our Services</h2>
-                </div>
-                <div class="categorys" id="section-6-categorys">
-                </div>
-            </section>
-            <!--FOOTER                            -->
-            <footer>
-                <div class="footer-container">
-                    <div class="footer-section">
-                        <div class="footer-logo">
-                            <img src="images/footer-logo.png" alt="">
-                            <h3>Electrosouss</h3>
-                        </div>
-                        <ul>
-                            <li><a href="#">Who Are We?</a></li>
-                            <li><a href="#">General Conditions Of Sale</a></li>
-                            <li><a href="#">Legal Information</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Our Services</h3>
-                        <ul>
-                            <li><a href="#">After Sales Service</a></li>
-                            <li><a href="#">Payment Method</a></li>
-                            <li><a href="#">Delivery & Installation</a></li>
-                            <li><a href="#">Product Warranty</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Need Help?</h3>
-                        <ul>
-                            <li><a href="#">Our Stores?</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Frequently Asked Questions (FAQ)</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section newsletter">
-                        <h3>Newsletter</h3>
-                        <p>SUBSCRIPTION TO THE NEWSLETTER</p>
-                        <form>
-                            <input type="email" placeholder="E-mail..." required>
-                            <button type="submit">Subscribe</button>
-                        </form>
-                        <p>Suivez-nous sur les réseaux sociaux</p>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="back-to-top">
-                    <a href="#"><i class="fas fa-arrow-up"></i></a>
-                </div>
-            </footer>
-
-        </div>
-
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-        <script src="javaScript/Section1.js"></script>
-        <script src="javaScript/Section4.js"></script>
-        <script src="javaScript/Section5.js"></script>
-        <script src="javaScript/Section6.js"></script>
-        <script src="javaScript/Loading.js"></script>
-    </body>
-
-    >>>>>>> 44a83dd (initial commit -m "initialisation with git")
-
-    </html>
+</html>
